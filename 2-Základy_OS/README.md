@@ -1,3 +1,4 @@
+# 2 - Základy OS
 ## Terminologie
 
 - **Operační systém (OS)** - SW, který počítači říká, jak se chovat. Ovládá HW, spouští programy, rozvrhuje úkoly a zdroje a poskytuje uživateli rozhraní k počítači

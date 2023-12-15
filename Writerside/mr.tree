@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="mr"
+                  name="Maturita Resources" start-page="README.md">
+
+    <toc-element topic="README.md"/>
+    <toc-element toc-title="3-Konfigurace_OS">
+        <toc-element topic="3-Konfigurace_OS_README.md"/>
+    </toc-element>
+    <toc-element toc-title="2-Základy_OS">
+        <toc-element topic="2-Základy_OS_README.md"/>
+    </toc-element>
+    <toc-element toc-title="1-Počítač_a_jeho_stavba">
+        <toc-element topic="1-Počítač_a_jeho_stavba_README.md"/>
+    </toc-element>
+</instance-profile>
