@@ -1,3 +1,0 @@
-# Somtehing
-
-Start typing here...

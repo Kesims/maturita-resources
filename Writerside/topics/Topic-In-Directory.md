@@ -1,3 +1,0 @@
-# Topic In Directory
-
-Start typing here...
