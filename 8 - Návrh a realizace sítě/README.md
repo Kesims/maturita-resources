@@ -1,0 +1,1 @@
+# 8 - Návrh a realizace jednoduché sítě, připojení počítače k lokální síti

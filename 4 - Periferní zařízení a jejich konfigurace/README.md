@@ -1,0 +1,1 @@
+# 4 - Periferní zařízení, členění, konektivita zařízení, způsob instalace a konfigurace.

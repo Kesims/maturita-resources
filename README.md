@@ -1,4 +1,6 @@
 # maturita-resources
-Maturita materials for DELTA.
+Řešené otázky k maturitě - DELTA. 
 
-Each question will have its own directory, containing readme and all the images etc. related to the question.
+Dělejte si s tím co chcete, pull requestujte, forkujte, whatever.
+
+Otázky označené jako `P` jsou pouze pro skupinu programátorů, `G` pro skupinu grafiků.
