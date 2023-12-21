@@ -23,11 +23,11 @@
 
 
 - Má 5 základních stavů:
-    - **Nový (New)** - proces byl právě vytvořen
-    - **Probíhající (Running)** - instrukce procesu začala být vykonávána
-    - **Čekající** **(Waiting)** - proces čeká na nějakou událost (např. na dokončení I/O operace nebo přijetí signálu)
-    - **Připraven (Ready)** - proces čeká na procesor
-    - **Ukončen (Terminated)** - proces dokončil svou činnost
+    - **Nový (New)** - proces byl právě vytvořen
+    - **Probíhající (Running)** - instrukce procesu začala být vykonávána
+    - **Čekající** **(Waiting)** - proces čeká na nějakou událost (např. na dokončení I/O operace nebo přijetí signálu)
+    - **Připraven (Ready)** - proces čeká na procesor
+    - **Ukončen (Terminated)** - proces dokončil svou činnost
 
   ![Process life cycle](https://zcu.arcao.com/kiv/zos/zos/OdSobi/Materialy/Buris/dalsi-materialy/operacni_systemy-02/cpu/cpu11.gif)
 
@@ -45,7 +45,16 @@
 
 ## Historie vývoje
 
-1. Původní PC bez OS (nikdo o něm nepřemýšlel) - fungovaly doslova jako “velká kalkulačka”. Pro vstup se používaly děrné štítky s binárním zápisem dírek.
-2. **50-60. léta** - Představení jazyků _Fortran_ a _Basic_ => efektivnější programování, přichází myšlenka o OS pro ušetření práce.
-3. **70. léta** - První OS, rozšíření mezi lidmi celkem trvá. Programy byly napsány na páskách a uživatel si musel sám napsat spouštěcí skript v jazyce Basic. Většina lidí však s Basic neumělo, tak se začaly dělat OS s předprogramovanými aplikacemi (Atari, Commodore).
-4. **MS-DOS** - Představení v roce 1981, první masivně rozšířený OS na domácích PC.
+1. **40-50. léta:** Původní PC bez OS (nikdo o něm nepřemýšlel) - fungovaly doslova jako “velká kalkulačka”. Pro vstup se používaly děrné štítky s binárním zápisem dírek. Programování těchto strojů tak bylo obtížné a časově náročné.
+2. **50-60. léta:** Představení jazyků _Fortran_ a _Basic_ => efektivnější programování, přichází tzv. [_dávkový_](#druhy-operačních-systémů) OS. 
+3. **60-70. léta:** OS s [multitaskingem](#druhy-operačních-systémů), větší podpora programátorů, lepší zpráva zdrojů.
+4. **80-90. léta:** Osobní PC s [GUI](#terminologie) (Windows, Macintosh)
+5. **Současnost (>2000):** Vývoj zaměřen na mobilitu, cloudové technologie, bezpečnost a efektivní využití výpočetního výkonu.
+
+### Druhy operačních systémů:
+
+- **Dávkové (Batch) operační systémy:** Spouštěly programy v dávkách bez interakce s uživatelem.
+- **Interaktivní operační systémy:** Interake pomocí terminálů nebo textového rozhraní.
+- **Síťové operační systémy:** Navrženy pro efektivní správu počítačových sítí a zpracování dat na vzdálených strojích.
+- **Multitaskingové operační systémy:** Schopné provádět více úloh současně.
+- **Mobilní operační systémy:** Navrženy pro chytré telefony a tablety, jako je iOS pro Apple a Android pro zařízení různých výrobců.
