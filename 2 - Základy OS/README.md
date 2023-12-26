@@ -58,3 +58,35 @@
 - **Síťové operační systémy:** Navrženy pro efektivní správu počítačových sítí a zpracování dat na vzdálených strojích.
 - **Multitaskingové operační systémy:** Schopné provádět více úloh současně.
 - **Mobilní operační systémy:** Navrženy pro chytré telefony a tablety, jako je iOS pro Apple a Android pro zařízení různých výrobců.
+
+## Jádro
+- Základ OS, spravuje hardware počítače a poskytuje služby ostatním programům
+
+### Monolitické jádro
+- Klasické **velké a komplexní jádro**, ve kterém jsou implementovány **všechny funkce OS** (ovladače, filesystémy...)
+- 2 typy procesů:
+  - **Bežné** - Běží v uživatelském prostoru, s omezeným přístupem k jádru, spustitelné uživateli
+  - **Systémové** - Běží v jádru, neomezený přístup k HW a paměti PC, spouštěné jádrem
+- K těmto funkcím se pak běžné procesy dotazují přes **systémová volání**
+- Výhodami jsou **výkon** a **stabilita**
+
+![monolitic_core.png](monolitic_core.png)
+
+
+### Mikrojádro
+- velmi **malé, jednoduché jádro** OS s pouze **nejzákladnějšími funkcemi** pro menší objem bežícího kódu
+- Typicky správu paměti a podporu pro plánování procesů a meziprocesové komunikace
+- **Ostatní funkce** poskytuje jako samostatné servery, které běží **v uživatelském prostoru**
+- **Bezpečné, škálovatelné, lehčí na údržbu**
+![microcore.png](microcore.png)
+
+## Druhy OS
+### Desktop (Client)
+
+
+### Server
+
+
+### Mobile
+- Pro mobilní zařízení
+- Android, iOS
