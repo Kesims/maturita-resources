@@ -81,11 +81,30 @@
 ![microcore.png](microcore.png)
 
 ## Správa a konfigurace
-- Mezi nástroje umožňující správu a konfiguraci Desktop a Serverových OS patří:
-  - **GUI** (Správce úloh/souborů/zařízení, Ovládací panel)
-  - **CMD**
-  - _\+ pro server ještě Správce serveru, bezpečnosti, úložiště_
-- Tyto nástroje se pak liší v zavislosti na konkrétním OS
+### Desktop OS:
+
+- **Správce úloh/souborů/zařízení:**
+  - Poskytuje možnost sledovat běžící procesy, spravovat soubory a ovladače zařízení.
+- **Ovládací panely:**
+  - Zde lze nalézt široké spektrum funkcí pro správu systému, zařízení, síťových nastavení a zabezpečení.
+- **Nastavení:**
+  - Modernější, uživatelsky přívětivější rozhraní umožňující základní nastavení včetně personalizace, účtů, aplikací a sítě.
+- **Správce disků:**
+  - Pro správu pevných disků, oddílů, formátování a změnu velikosti.
+- **Správce tiskárny:**
+  - Slouží k údržbě tiskáren, nastavení tiskových úloh a ověření stavu tiskáren.
+
+### Server OS:
+
+- **Správce serveru:**
+  - Poskytuje rozsáhlé možnosti pro správu serveru, včetně správy rolí, funkcí a konfigurace serveru.
+- **Správce bezpečnosti:**
+  - Slouží k nastavení a správě bezpečnostních politik, firewallu, šifrování a dalších aspektů zabezpečení serveru.
+- **Správce úložišť:**
+  - Umožňuje správu dat, zálohování, řízení disků a úložišťových zařízení.
+- **Nástroje pro správu výkonu:**
+  - Poskytují informace o využití výkonu serveru, sledování výkonu a optimalizaci serverových prostředků.
+
 - Pro OS Windows např:
   - **Ovládací panely:** Rozsáhlý nástroj poskytující širokou škálu funkcí pro správu systému, zařízení, síťových nastavení a zabezpečení.
   - **Nastavení:** Modernější prostředí umožňující základní nastavení včetně personalizace, účtů, aplikací a sítě.
