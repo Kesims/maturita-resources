@@ -80,13 +80,19 @@
 - **Bezpečné, škálovatelné, lehčí na údržbu**
 ![microcore.png](microcore.png)
 
-## Druhy OS
-### Desktop (Client)
-
-
-### Server
-
-
-### Mobile
-- Pro mobilní zařízení
-- Android, iOS
+## Správa a konfigurace
+- Mezi nástroje umožňující správu a konfiguraci Desktop a Serverových OS patří:
+  - **GUI** (Správce úloh/souborů/zařízení, Ovládací panel)
+  - **CMD**
+  - _\+ pro server ještě Správce serveru, bezpečnosti, úložiště_
+- Tyto nástroje se pak liší v zavislosti na konkrétním OS
+- Pro OS Windows např:
+  - **Ovládací panely:** Rozsáhlý nástroj poskytující širokou škálu funkcí pro správu systému, zařízení, síťových nastavení a zabezpečení.
+  - **Nastavení:** Modernější prostředí umožňující základní nastavení včetně personalizace, účtů, aplikací a sítě.
+  - **Správce zařízení:** Podrobný nástroj pro správu hardware, ovladačů a zařízení v systému.
+  - **Správce úloh:** Ukazuje běžící procesy a využití systémových prostředků, umožňuje ukončit procesy nebo sledovat výkon.
+  - **Regedit (Editor registru):** Pokročilý nástroj pro úpravu a správu systémového registru Windows.
+  - **Služby:** Nástroj pro správu spouštění, zastavení nebo změnu konfigurace služeb.
+  - **Správce disků:** Pro správu pevných disků, oddílů, formátování a změnu velikosti.
+  - **Správce tiskárny:** Umožňuje správu tiskáren, nastavení tiskových úloh a ověření stavu tiskáren.
+  - _Další nástroje jako Správce serveru, bezpečnosti, úložiště jsou specifické pro servery a poskytují pokročilé možnosti pro správu serverových OS._
