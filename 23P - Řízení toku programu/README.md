@@ -34,7 +34,7 @@ foreach (int number in array) {
 //and based on that continues exectuing its code or "closes" itself
 while(!statement) {
     if(i<5)
-        statement==true
+        statement=true
     i++;
 }
 
@@ -42,7 +42,7 @@ while(!statement) {
 //checked on the end of iterations
 do {
     if(i<5)
-        statement==true
+        statement=true
     i++;
 } while(!statement)
 ```
