@@ -48,8 +48,34 @@ do {
 ```
 
 ## Výjimky
+Vyjímky jsou zvláštní typy událostí, které mohou nastat během běhu programu a které mohou narušit běžný tok kódu. Použití **správného řízení výjimek může zlepšit stabilitu a bezpečnost vašeho programu**.V C# se vyjímky řídí pomocí bloků try, catch a finally. Základní struktura vypadá takto:
+````try
+{
+    // Kód, který může vyvolat výjimku
+    // Např. Out of bounds of array nebo špatný parse
+}
+catch (TypVýjimky1 ex)
+{
+    // Obsluha konkrétního typu výjimky TypVýjimky1
+    Throw new OutOfBoundsException();
+}
+catch (TypVýjimky2 ex)
+{
+    // Obsluha konkrétního typu výjimky TypVýjimky2
+    Throw new 
+}
+finally // Kdo kurva používa finally????
+{
+    // Volitelný blok finally, který se vždy provede bez ohledu na to, zda byla výjimka vyvolána nebo ne
+}
+````
 
-
+### Try
+**Obsahuje kód, ve kterém může nastat výjimka**. Pokud se v tomto bloku objeví výjimka, program se okamžitě přesune na odpovídající blok catch.
+### Catch
+Obsahuje kód pro **zpracování výjimky**. Můžete mít více bloků catch pro různé typy výjimek. Pokud se vyskytne výjimka odpovídající danému typu v catch, program provede kód uvnitř tohoto bloku.
+### Finally
+**Je volitelný** a obsahuje kód, který se vždy provede, bez ohledu na to, zda byla výjimka vyvolána nebo ne. Často se používá k uvolnění prostředků nebo k provedení kódu, který by měl být spuštěn vždy, když se blok try dokončí.
 ## Řízení událostmi
 
 
