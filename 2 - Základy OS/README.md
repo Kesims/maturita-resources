@@ -115,3 +115,6 @@
   - **Správce disků:** Pro správu pevných disků, oddílů, formátování a změnu velikosti.
   - **Správce tiskárny:** Umožňuje správu tiskáren, nastavení tiskových úloh a ověření stavu tiskáren.
   - _Další nástroje jako Správce serveru, bezpečnosti, úložiště jsou specifické pro servery a poskytují pokročilé možnosti pro správu serverových OS._
+
+
+NTFS, exFAT, FAT32, APFS
