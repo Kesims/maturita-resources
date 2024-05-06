@@ -8,7 +8,7 @@
 
 • Přenáší data a informace od uživatele do zařízení (počítače)
 
-• Rozdělení:
+## Rozdělení:
 
 • Textová (klávesnice)
 
