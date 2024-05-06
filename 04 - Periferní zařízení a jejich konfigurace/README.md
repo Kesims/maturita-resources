@@ -8,7 +8,7 @@
 
 • Přenáší data a informace od uživatele do zařízení (počítače)
 
-• Rozdělení:
+## Rozdělení:
 
 • Textová (klávesnice)
 
@@ -36,7 +36,7 @@
 
 • Připojení: PS/2, USB, Bluetooth
 
-• Typy:
+### Typy:
 
 • Čistě mechanické klávesy
 
