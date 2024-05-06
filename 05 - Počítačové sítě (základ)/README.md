@@ -13,14 +13,20 @@
 <br> •	Tlustý klient (Obsáhlý klient): Provádí všechny operace sám, nemusí spoléhat na server. Nejčastěji v podobě osobního počítače, laptopu.
 <br> •	Tenký klient: Využívá zdrojů hlavně z hostitelského počítače, víceméně jen zobrazuje grafická data poskytované aplikačním serverem. Výhodou je ovladatelnost a pružnost.
 <br> •	Hybridní klient: Směs modelů klienta. Sám zpracovává operace, ale spoléhá i na server.
-## Služba: Realizuje spojení a výměnu informací mezi počítači, komunikuje podle určitých pravidel, za účelem sdílení společných zdrojů nebo výměny zpráv.
-## Agregace: Spojování, seskupování, shlukování (udává se x: y–x → minimální podíl; y → maximální podíl z rychlosti).
-## Bezstavovost: Vztahuje se k implementaci protokolů, kde protokol je jednoduché implementovat a představuje malou zátěž pro server. Jednotlivé požadavky na server položené spolu nejsou nijak svázány, server neví, zda jsou od téhož uživatele, zda spolu nějak souvisejí.
-## Síťová karta: Hardware k vzájemné komunikaci v PC síti.
-## Firewall: Kontrola a omezení komunikace počítače po síti.
+## Služba: 
+Realizuje spojení a výměnu informací mezi počítači, komunikuje podle určitých pravidel, za účelem sdílení společných zdrojů nebo výměny zpráv.
+## Agregace: 
+Spojování, seskupování, shlukování (udává se x: y–x → minimální podíl; y → maximální podíl z rychlosti).
+## Bezstavovost: 
+Vztahuje se k implementaci protokolů, kde protokol je jednoduché implementovat a představuje malou zátěž pro server. Jednotlivé požadavky na server položené spolu nejsou nijak svázány, server neví, zda jsou od téhož uživatele, zda spolu nějak souvisejí.
+## Síťová karta: 
+Hardware k vzájemné komunikaci v PC síti.
+## Firewall: 
+Kontrola a omezení komunikace počítače po síti.
 
 
-## Počítačové sítě: Souhrnné označení pro technické prostředky (např. PC, switch, router, kabely), které realizují spojení a výměnu informací mezi počítači, umožňující komunikaci podle určitých pravidel – sdílení prostředků, výpočetního výkonu, výměny zpráv.
+## Počítačové sítě: 
+Souhrnné označení pro technické prostředky (např. PC, switch, router, kabely), které realizují spojení a výměnu informací mezi počítači, umožňující komunikaci podle určitých pravidel – sdílení prostředků, výpočetního výkonu, výměny zpráv.
 ### Součásti sítě:
 <br> •	Síťové uzly: Každý uzel musí mít svoji MAC adresu nebo adresu řízení datového spoje (např. IP).
 <br> •	Výkonná zařízení (servery, stanice):
@@ -79,7 +85,7 @@ Hierarchický model sítě: Propojení zařízení v menší nebo střední firm
 <br> •	Jádro: Představuje vysokorychlostní páteř sítě, která musí být velmi spolehlivá a připojena k internetu často více linkami pro rychlý přenos velkého objemu dat.
 
 
-##Základní topologie sítě:
+## Základní topologie sítě:
 <br> •	Sběrnicová topologie (BUS): Nejjednodušší způsob zapojení počítačů do sítě, kde se všechny stanice propojují jediným kabelem (hlavní kabel/segment/páteř), který spojuje všechny PC.
 <br> •	Kruhová topologie (RING): Počítače jsou propojeny kabelem do jediného okruhu, kde neexistují zakončené konce. Signál putuje po smyčce v jednom směru a prochází všemi PC.
 <br> •	Hvězdicová topologie (STAR): Každý počítač je připojený pomocí kabelu k centrálnímu prvku. Mezi dvěma stanicemi existuje vždy jen jedna cesta.
