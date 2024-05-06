@@ -36,7 +36,7 @@
 
 • Připojení: PS/2, USB, Bluetooth
 
-• Typy:
+### Typy:
 
 • Čistě mechanické klávesy
 
