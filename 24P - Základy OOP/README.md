@@ -4,6 +4,17 @@ které tvoří základní stavební kameny** objektově orientovaného programov
 Tento programovací paradigma se zaměřuje na práci s objekty a jejich vzájemné interakce. 
 Zde je stručný přehled některých základních prvků OOP:
 
+## Proč OOP:
+- Lepší čitelnost kódu
+- Znovupoužitelnost
+- Snazší Debugování:
+    - Lepší struktura a organizace kódu v OOP usnadňuje ladění a hledání chyb. Když každá třída má jasně definovanou odpovědnost - může být snazší identifikovat, kde se problémy vyskytují.
+- Komentáře a Dokumentace:
+    -  OOP umožňuje lépe organizovat kód, což může snížit potřebu nadměrných komentářů. Díky jasným třídám a metodám může být kód samo o sobě snadno pochopitelný
+- Rozšiřitelnost:
+    - Díky principům OOP lze software snadno rozšířit
+
+
 ## Třídy a objekty: 
 **Třída je abstraktní popis datové struktury, 
 která definuje atributy (data) a metody (funkce),** které s těmito daty pracují. 
@@ -38,10 +49,7 @@ modulárního kódu**, který je snadněji udržovatelný, rozšiřitelný a zno
 OOP je široce **používaným paradigmatem v mnoha programovacích jazycích, včetně Java, 
 C++, Python, C# a mnoha dalších.**
 
-
-
-
-
+```
 Seznam věcí, které by měla tato otázka obsahovat
 
 
@@ -97,3 +105,46 @@ Overridning - přepsání metody v odvozené třídě
 
 Přetěžování metod - metoda se stejným názvem, ale jinými parametry
 Přetěžování operátorů - např. sčítání dvou objektů
+``` 
+<br>
+<br>
+
+# Kecy
+
+## Override vs abstract
+Virtual methods have an implementation and provide the derived classes with the option of overriding it. Abstract methods do not provide an implementation and force the derived classes to override the method.
+So, abstract methods have no actual code in them, and (non-abstract) subclasses HAVE TO override the method. Virtual methods can have code, which is usually a default implementation of something, and any subclasses CAN override the method using the override modifier and provide a custom implementation.
+
+## Interface vs Abstract
+- interfaces can have no state or implementation
+- a class that implements an interface must provide an implementation of all the methods of that interface
+- abstract classes may contain state (data members) and/or implementation (methods)
+- abstract classes can be inherited without implementing the abstract methods (though such a derived class is abstract itself)
+- interfaces may be multiple-inherited, abstract classes may not (this is probably the key concrete reason for interfaces to exist separately from abtract classes - they permit an implementation of multiple inheritance that removes many of the problems of general MI).
+
+Abstract classes are used for Modelling a class hierarchy of similar looking classes (For example Animal can be abstract class and Human , Lion, Tiger can be concrete derived classes)
+AND
+Interface is used for Communication between 2 similar / non similar classes which does not care about type of the class implementing Interface(e.g. Height can be interface property and it can be implemented by Human , Building , Tree. It does not matter if you can eat , you can swim you can die or anything.. it matters only a thing that you need to have Height (implementation in you class) )
+
+## DRY:
+    • DRY je zkratka pro "Don't Repeat Yourself". Tato zásada zdůrazňuje snahu minimalizovat opakování kódu v projektu. Místo toho, abychom stejný kód psali opakovaně, měli bychom ho extrahovat do jednoho místa a znovu používat toto místo.
+    • Proč:
+        ◦ Snížení chyb: Když měníme kód, který je napsán pouze jednou, nemusíme se starat o to, že zapomeneme aktualizovat všechny kopie kódu.
+        ◦ Údržba: Změny v chování můžeme provádět na jednom místě, což zjednodušuje údržbu.
+## SOLID:
+Principy SOLID je pět zásad objektově orientovaného návrhu tříd. Jedná se o soubor pravidel a osvědčených postupů, které je třeba dodržovat při návrhu struktury tříd.
+
+**SRP** - Jednotná odpovědnost (Single Responsibility Principle):
+    • Třída by měla mít pouze jednu odpovědnost a měla by mít jen jediný důvod ke změně. To zajišťuje jednotnost a snižuje riziko chyb.
+
+**OCP** - Otevřené/zavřené (Open/Closed Principle):
+    • Software by měl být otevřen pro rozšíření, ale zavřen pro modifikaci. Měli bychom moci přidat novou funkcionalitu bez změny existujícího kódu.
+
+**LSP** - Liskov substituce (Liskov Substitution Principle):
+    • Objekty odvozené od dané třídy by měly být schopny být nahrazeny instancemi této třídy bez ovlivnění správnosti programu.
+
+**ISP** - Rozhraní segregation (Interface Segregation Principle):
+    • Mnoho rozhraní specifických pro klienta je lepší než jedno univerzální rozhraní. Klienti by neměli být nuceni implementovat funkci, kterou nepotřebují.
+
+**DIP** - Závislosti inversion (Dependency Inversion Principle):
+    • Vyšší úrověň modulů by neměla záviset na nižší úrovni. Závislosti by měly být zaměřeny na abstrakce, ne na konkrétní implementace.
