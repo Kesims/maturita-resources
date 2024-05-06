@@ -59,7 +59,7 @@ Lze ho použít k vypsání informací o procesech, které běží na počítač
 
 
 
-Co to je proces a daemon (viz. otázka 2)
+Co to je proces a daemon [viz. otázka 2](/02%20-%20Základy%20OS/README.md)
 
-vč. informací z otázky 3.
+vč. informací z [otázky 3](/03%20-%20Konfigurace%20OS/README.md)
 
