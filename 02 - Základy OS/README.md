@@ -96,6 +96,8 @@
 
 ### Server OS:
 
+> Role serveru - skupina služeb, které poskytuje server
+
 - **Správce serveru:**
   - Poskytuje rozsáhlé možnosti pro správu serveru, včetně správy rolí, funkcí a konfigurace serveru.
 - **Správce bezpečnosti:**

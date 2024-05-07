@@ -1,0 +1,1 @@
+# 10 - Souborové zdroje v síti, správa dat pomocí NTFS teorie/praxe
