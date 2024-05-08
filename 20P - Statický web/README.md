@@ -1,4 +1,6 @@
-html5
+# Statický web
+## html5
+HTML5, pátá revize Hypertextového značkovacího jazyka, je základní technologií pro strukturování a prezentaci obsahu na World Wide Webu. Nabízí moderní a efektivní přístup k vývoji webových stránek, přináší nové prvky jako sémantické elementy pro lepší strukturu stránek, nativní podporu pro multimediální obsah jako audio a video, vylepšené formuláře pro interakci s uživatelem a prvek canvas pro dynamickou grafiku a animace bez nutnosti používání pluginů. HTML5 také přináší zlepšenou dostupnost a kompatibilitu s různými zařízeními, čímž se stává nezbytným nástrojem pro vytváření responzivních a interaktivních webových zážitků napříč různými platformami a zařízeními.
 
 html + css + javascript - základ webu
 
