@@ -14,7 +14,6 @@ Zde je stručný přehled některých základních prvků OOP:
 - Rozšiřitelnost:
     - Díky principům OOP lze software snadno rozšířit
 
-
 ## Třídy a objekty: 
 **Třída je abstraktní popis datové struktury, 
 která definuje atributy (data) a metody (funkce),** které s těmito daty pracují. 
@@ -111,16 +110,15 @@ Přetěžování operátorů - např. sčítání dvou objektů
 
 # Kecy
 
-## Override vs abstract
-Virtual methods have an implementation and provide the derived classes with the option of overriding it. Abstract methods do not provide an implementation and force the derived classes to override the method.
-So, abstract methods have no actual code in them, and (non-abstract) subclasses HAVE TO override the method. Virtual methods can have code, which is usually a default implementation of something, and any subclasses CAN override the method using the override modifier and provide a custom implementation.
+## Override vs. Abstraktní
+Virtuální metody mají implementaci a poskytují odvozeným třídám možnost **přepsat** ji. Abstraktní metody neobsahují implementaci a nutí odvozené třídy **přepsat** metodu. Takže abstraktní metody v sobě nemají žádný skutečný kód, a (neabstraktní) podtřídy **MUSÍ** **přepsat** metodu. Virtuální metody mohou obsahovat kód, který obvykle představuje výchozí implementaci něčeho, a libovolné podtřídy **MOHOU** **přepsat** metodu pomocí modifikátoru `override` a poskytnout vlastní implementaci.
 
-## Interface vs Abstract
-- interfaces can have no state or implementation
-- a class that implements an interface must provide an implementation of all the methods of that interface
-- abstract classes may contain state (data members) and/or implementation (methods)
-- abstract classes can be inherited without implementing the abstract methods (though such a derived class is abstract itself)
-- interfaces may be multiple-inherited, abstract classes may not (this is probably the key concrete reason for interfaces to exist separately from abtract classes - they permit an implementation of multiple inheritance that removes many of the problems of general MI).
+## Rozhraní vs. Abstraktní
+- Rozhraní nemohou mít stav nebo implementaci
+- Třída, která implementuje rozhraní, musí poskytnout implementaci všech metod tohoto rozhraní
+- Abstraktní třídy mohou obsahovat stav (datové členy) a/nebo implementaci (metody)
+- Abstraktní třídy mohou být děděny bez implementace abstraktních metod (i když taková odvozená třída je sama abstraktní)
+- Rozhraní mohou být vícezděděny, abstraktní třídy nemohou (to je pravděpodobně hlavním důvodem, proč jsou rozhraní oddělena od abstraktních tříd - umožňují implementaci vícezdědění, která odstraňuje mnoho problémů obecného vícezdědění).
 
 Abstract classes are used for Modelling a class hierarchy of similar looking classes (For example Animal can be abstract class and Human , Lion, Tiger can be concrete derived classes)
 AND
