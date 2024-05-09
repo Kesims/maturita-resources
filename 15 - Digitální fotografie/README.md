@@ -317,9 +317,9 @@ Digitální stěny:
 - Nevýhody: velikost (40MB na 10Mpx), HW náročné, drahé foto vybavení
 ###  RAW
 - Profesionální fotografický formát
-- Užívá se zpravidla pro pořizování snímků, které nebudou dále upravovány
-- Výhody: Proti TIFF menší velikost
-- Nevýhody: Zápis dat, je již při pořizování prováděn specifickou metodou – vyžaduje speciální SW, nehodí se pro další úpravy
+- Obsahuje minimálně zpracovaná data ze snímače digitálního fotoaparátu
+- Výhody: Možnost následných úprav
+- Nevýhody: Fotografie zabírají hodně místa
 
 # Kompoziční principy
 - **Kompozice ve fotografii:**
