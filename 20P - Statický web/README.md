@@ -61,7 +61,7 @@ Aplikuje na principu specificity selektoru a kaskádování
 	
   Čím specifičtější tím vyšší priorita
 
-## Selektory
+### Selektory
 •	„.“ – tečka – vybere prvky s třídou
 
 o	.třída
@@ -96,40 +96,67 @@ o	Vybere všechny img tagy, které jsou prvním potomkem divu
 
 o	Vybere všechny img tagy, které jsou okamžitě za p
 
-## Sekvencování
+### Sekvencování
 Selektory jde sekvencovat například takto:
 
 .třída1.třída2
 
 •	Vybere všechny tagy, které mají třídu1 a třídu2
 
+```
+/* Styl pro všechny prvky <div> */
+div {
+    background-color: lightblue;
+    color: white;
+}
 
-html + css + javascript - základ webu
+/* Styl pro prvky s třídou .container, které jsou přímými potomky <body> */
+body > .container {
+    border: 2px solid black;
+}
 
-sémantický web - pojem - =web, kde se neřeší vzhled, ale jde o obsah. (žádné css). Tzn jedná se pouze o základní html tagy.
--> tzn jde o strukturu webu která se vztahuje k informačnímu významu
+/* Styl pro prvky s třídou .flex-container používající Flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
 
-základy html:
-zanořování tagů, rozdíl mezi HTML a XML, párové a nepárové tagy
+/* Styl pro prvky s třídou .grid-container používající Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+```
 
-xHTML - html, které splňuje xml normu (všechny tagy jsou vždy uzavřené), jaký je rozdíl mezi html a xhtml
+### Flexbox:
+Vlastnosti: display: flex;
 
-základní formulářové prvky a jejich tagy, jednoduché inputtagy, textarea, a potom ne-input tagy jako label, select, option
+Popis: 
 
+Flexbox je technika uspořádání prvků v jednorozměrném layoutu, která umožňuje flexibilitu v uspořádání prvků ve flexibilním kontejneru. 
+Pomocí vlastností jako justify-content, align-items a flex-direction můžete ovládat uspořádání prvků ve směru řádků nebo sloupců.
+### Grid Layout:
+Vlastnosti: display: grid;
 
-doctype
+Popis: 
+Grid Layout je technika uspořádání prvků v dvourozměrném layoutu pomocí řádků a sloupců. Umí lépe zacházet s komplexnějšími rozloženími než Flexbox.
+Pomocí vlastností jako grid-template-columns, grid-template-rows a grid-gap můžete definovat strukturu a vzdálenosti mezi řádky a sloupci.
 
+## Input
+### Input (Vstup):
+```<input>```: Obecný prvek pro vstup dat. Má různé typy, jako textové pole, tlačítko, zaškrtávací políčko, atd.
 
+Typy: text, password, checkbox, radio, submit, button, file, email, number, date, tel, url, atd.
+### Textarea (Textové pole):
+```<textarea>```: Prvek pro větší množství textu, kde je možné zadat více řádků textu.
+### Label (Popisek):
+```<label>```: Popisuje vstupní prvek, pomáhá uživatelům porozumět, co je požadováno.
+### Select (Výběrový seznam):
+```<select>```: Tvoří roletový seznam, ze kterého lze vybrat jednu nebo více možností.
+### Option (Možnost):
+```<option>```: Definuje jednu možnost výběru uvnitř prvku <select>.
 
-
-css - pravidla - selector, složené závorky, vlastnost: hodnota
-grid, flexbox, apod.
-
-
-css selektory (mezera, >, ., !)
-
-
-javascript sem nepatří
+## javascript sem nepatří
 
 bootstrap, tailwind, apod.
 
