@@ -21,16 +21,17 @@ Data vždy **validujeme**, na obou stranách (klient i server)!
 
 ## Webové útoky a ochrana
 Typy:
-* **SQL injection** - vložení SQL kódu do formuláře, který se spustí na serveru
-* **XSS** - podstrčení vlasního JS, který se někomu zobrazí a interpretuje, obrana sanitizací, innerText
+* **SQL injection** - vložení SQL kódu do formuláře, který se spustí na serveru. Obrana sanitizací nebo předkompilovaním dotazu do kterého akorát dosadíme proměnné.
+* **XSS** - podstrčení vlasního JS, který se někomu zobrazí a interpretuje. Obrana sanitizací, innerText (jen zobrazení textu, aby se skript nevykonal).
 * **CSRF**
 * **Brute force**
 
 ## Bezstavový protokol (HTTP)
 HTTP je protokol, který neuchovává informace o stavu mezi požadavky. To znamená, že každý požadavek je nezávislý a obsahuje všechny potřebné informace pro jeho vyřízení. Tento bezstavový přístup k zajištění komunikace mezi klientem a serverem umožňuje škálovatelnost a jednoduchost implementace.
 
+_"Neříká kdo přistupuje, ale abychom nemuseli stále posílat jméno a heslo, tak si při autentizaci vytváříme **tokeny** (JWT, session cookies). Prakticky každý nový webový projekt (př. Node) ho má."_
+
 ## Práce s heslem
-* Ukladáme formou **tokenu** (JWT, session cookies)
 * Hesla šifrujeme pomocí **hashů** a **soli** (ne té kuchyňské)
 
 ## Frameworky
@@ -50,10 +51,10 @@ Dále ještě existuje striktnější MVVM (Model, View, ViewModel) architektura
 JavaScript je jedním z nejrozšířenějších programovacích jazyků pro vývoj webových aplikací. Používá se jak na straně klienta (prohlížeč), tak i na straně serveru (Node.js). Je známý svou flexibilitou, interaktivitou a širokou podporou komunitou a nástroji. JavaScript umožňuje dynamické změny na stránce, interakci s uživatelem a asynchronní komunikaci s serverem pomocí AJAX.
 
 ## AJAX
-AJAX (Asynchronous Javascript And Xml) - asynchronní načítání dat. Dnes místo xml spíš JSON, protobuf apod.
+AJAX (Asynchronous Javascript And Xml) - Asynchronní načítání dat. Dnes místo xml spíš JSON, protobuf apod. Díky němu nemusím stále data přesměrovávat na nové stránky, ale jen vyměním tu "substránku".
 
 ## Objektový model dokumentu
-Objektový model dokumentu - DOM (virtuální zrcadlo) - stromová struktura, která reprezentuje strukturu HTML dokumentu.
+Objektový model dokumentu - DOM (virtuální zrcadlo) - stromová struktura (každý element má children a parenta), která reprezentuje strukturu HTML dokumentu.
 
 
 
