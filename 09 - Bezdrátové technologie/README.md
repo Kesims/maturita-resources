@@ -3,15 +3,12 @@ vubec nevim co mele nechce se mi to cist boly me hlava a jsem undavbenej
 # Bezdrátové technologie
 Bezdrátové technologie jsou soubor technologických systémů, které umožňují přenos dat nebo signálů bez potřeby fyzických kabelů nebo drátů. 
 Tyto technologie využívají elektromagnetického záření, jako jsou rádiové vlny, mikrovlny nebo infračervené záření, 
-k přenosu informací mezi zařízeními. Bezdrátové technologie se staly nedílnou součástí moderního života a 
-jsou používány v široké škále aplikací, od mobilních telefonů až po bezdrátová zařízení v průmyslu a zdravotnictví.
+k přenosu informací mezi zařízeními.
 ## Historie bezdrátových technologií:
 V 19. století James Clerk Maxwell formuloval teorii elektromagnetického záření.
-Nicméně první praktické aplikace bezdrátové komunikace začaly vznikat až v 20. století. 
-Jedním z klíčových milníků byl vynález rádia Guglielma Marconiho v roce 1895, který umožnil bezdrátový přenos zvuku na velké vzdálenosti. 
-Během 20. století se bezdrátové technologie rapidně rozvíjely, včetně vynálezu televize, mobilních telefonů, bezdrátových sítí (Wi-Fi), 
-Bluetooth a dalších. V posledních desetiletích jsme byli svědky revolučního rozvoje bezdrátové komunikace, včetně rozšíření sítí rychlého 
-mobilního internetu (LTE, 5G) a vzestupu internetu věcí (IoT).
+
+Během 20. století se bezdrátové technologie rapidně rozvíjely, včetně vynálezu televize, mobilních telefonů, bezdrátových sítí (**Wi-Fi**), 
+**Bluetooth** a **mobilního internetu (LTE, 5G)**
 ## Typy bezdrátových technologií:
 Existuje mnoho různých typů bezdrátových technologií, z nichž každá má své specifické využití a charakteristiky. Mezi nejznámější patří:
 ### Wi-Fi: 
