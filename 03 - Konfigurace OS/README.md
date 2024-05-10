@@ -138,6 +138,35 @@ Příkaz `groupdel` slouží k smazání skupiny. Některé z parametrů jsou:
 > - `-f` - smaže skupinu i v případě, že je používána
 > - `groupname` - název skupiny
 
+## Příkaz chmod
+Příkaz `chmod` slouží k změně oprávnění pro daný soubor | adresář
+
+> `chmod WhoWhatWhich file | directory`
+> - Who - představuje identity: u,g,o,a (user, group, other, all)
+> - What - představuje akce: +, -, = (add, remove, set exact)
+> - Which - představuje úrovně přístupu: r, w, x (read, write, execute)
+
+Ukázky:
+> `chmod ug+rw test.txt` <- symbolický odkaz
+
+> `chmod 650 test.txt` <- numerický odkaz
+> - `6` - user
+> - `5` - group
+> - `0` - others
+
+Jak určit čísla?
+> - `read` => 4
+> - `write` => 2
+> - `execute` => 1
+
+Tudíž `rw-` bude  4+2 = 6
+
+
+### Sticky bit (relativně navíc, ale pan Horálek říkal, že nás nevyhodí od zkoušky, když to zmíníme)
+Toto oprávnění nemá vliv na jednotlivé soubory. Na úrovni adresáře však omezuje mazání souborů. Pouze vlastník (a root) souboru může soubor v rámci daného adresáře odstranit
+
+> - `drwxrwxrwt. 15 root root 4096 Sep 22 15:28 /tmp/`
+
 ## Principy tvorby skriptů v shellu
 Skripty v shellu jsou psány v textovém editoru a uloženy s příponou `.sh`. Skript je poté spuštěn v terminálu příkazem `sh nazev_skriptu.sh`. Skript může být spuštěn i přímo, pokud je nastaveno oprávnění pro spuštění. V tomto případě je skript spuštěn příkazem `./nazev_skriptu.sh`. Skript může být spuštěn i v jiném skriptu.
 
