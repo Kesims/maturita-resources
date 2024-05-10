@@ -41,37 +41,22 @@
 - Náprava
     - odstranění zjištěných slabých míst, zamezení práv k možnostem neoprávněných činností
 
-# Zabezpečení podle ISO/OSI modelu 
-- **L1**: Physical Layer
-```
-    • Zabezpečení portů
-        ◦ Fyzické porty
-        ◦ Vypnutí portů
-    • Zamknutí serverové místností
-    • Prokazování fyzického přístupu k serverům a žurnálování těchto aktivit
-```
-- **L2**: Data Link Layer
-```
-    • Zabezpečení portů
-        ◦ Filtrování MAC adres
-        ◦ Nastavení módu: Trunk X Access
-        ◦ Port security
-    • Zabezpečení přístupu
-        ◦ Použití hesel
-        ◦ Šifrované protokoly (SSH (RSA))
-    • VLAN
-```
-- **L3**:  Network Layer
-```
-    • Firewall 
-        ◦ ACL
-            ▪ pravidla na adresu
-            ▪ protokoly
-            ▪ přeportování
-    • ARP útoky
-        ◦ ARP spoofing
-    • NAT
-```
+# Útoky podle ISO/OSI modelu 
+- **Aplikační vrstva |7**
+    - Exploit
+- **Prezenční vrsta |6**
+    - Phishing
+- **Session vrstva |5**
+    - Hijacking
+- **Transportní vrstva |4**
+    - DoS útoky
+- **Network vrstva |3**
+    - man in the middle
+- **Data link vrstva |2**
+    - spoofing
+- **Fyzická vrstva |1**
+    - sniffing
+
 
 ## Zabezpečovací prvky
 
@@ -141,21 +126,23 @@
 - Ochrana před odposloucháváním => data se **nedají zachytit a zneužít**
 - Typy zabezpečení:
   - **WEP (Wired Equivalent Privacy)**
-    - Zastaralý (prolomen v roce 2001)
+    - První security protokol
+    - Používal 64 a 128-bit klíče
     - Šifrování RC4
   - **WPA (Wi-Fi Protected Access)**
     - Nástupce WEP
-    - Od roku 2002 (prolomen)
-    - Šifrování RC4
+    - Používal TKIP
+        - Šiforování RC4
+        - Generoval nový klíč pro každý packet
+    - Používal 128-bit klíče
   - **WPA2**
     - Nástupce WPA
     - Šifrování AES (poskytuje utajení, integritu a autentizaci - protokol CCMP)
-    - Prolomeno
   - **WPA3**
     - Představen počátkem roku 2018
-    - Šifruje každé připojení samostatně
-    - Možné přes něj na dálku konfigurovat zařízení
-
+    - Každý přenos dat je šifrován pomocí vlastního jedinečného šifrovacího klíče
+    - SAE
+        - SAE protokol přináší lepší protekci proti offline útokům a pokusy o uhodnutí hesla pomocí silnějších kryptografických algoritmů a bezpečnější metody výměny klíčů
 
 ## Útoky
 
