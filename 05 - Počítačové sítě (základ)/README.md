@@ -8,11 +8,12 @@
 <br> •	ISP (Internet Service Provider): Poskytovatel připojení k internetu a služeb s tím spojených.
 <br> •	Server: Označení pro počítač, který poskytuje služby.
 
-## Klient: 
-<br> •	Označení pro počítač, který využívá služby.
+## Klient:  
+•	Označení pro počítač, který využívá služby.
 <br> •	Tlustý klient (Obsáhlý klient): Provádí všechny operace sám, nemusí spoléhat na server. Nejčastěji v podobě osobního počítače, laptopu.
 <br> •	Tenký klient: Využívá zdrojů hlavně z hostitelského počítače, víceméně jen zobrazuje grafická data poskytované aplikačním serverem. Výhodou je ovladatelnost a pružnost.
 <br> •	Hybridní klient: Směs modelů klienta. Sám zpracovává operace, ale spoléhá i na server.
+
 ## Služba: 
 Realizuje spojení a výměnu informací mezi počítači, komunikuje podle určitých pravidel, za účelem sdílení společných zdrojů nebo výměny zpráv.
 ## Agregace: 
@@ -28,11 +29,11 @@ Kontrola a omezení komunikace počítače po síti.
 ## Počítačové sítě: 
 Souhrnné označení pro technické prostředky (např. PC, switch, router, kabely), které realizují spojení a výměnu informací mezi počítači, umožňující komunikaci podle určitých pravidel – sdílení prostředků, výpočetního výkonu, výměny zpráv.
 ### Součásti sítě:
-<br> •	Síťové uzly: Každý uzel musí mít svoji MAC adresu nebo adresu řízení datového spoje (např. IP).
+ •	Síťové uzly: Každý uzel musí mít svoji MAC adresu nebo adresu řízení datového spoje (např. IP).
 <br> •	Výkonná zařízení (servery, stanice):
 <br> •	Propojovací zařízení (aktivní, pasivní):
 ## Síťová propojení:
-<br> •	Drátově (fyzicky):
+ •	Drátově (fyzicky):
 <br> •	Metalický kabel
 <br> •	Optický kabel
 <br> •	Bezdrátově:
@@ -40,8 +41,7 @@ Souhrnné označení pro technické prostředky (např. PC, switch, router, kabe
 <br> •	Satelitní/optický přenos
 
 ## Síťové služby (příklady):
-
-<br> •	Webové
+ •	Webové
 <br> •	Poštovní
 <br> •	Tiskové
 <br> •	Souborové
@@ -92,6 +92,7 @@ Představuje vysokorychlostní páteř sítě, která musí být velmi spolehliv
 
 
 ## Základní topologie sítě:
+![img_3.png](img_3.png)
 ### Sběrnicová topologie (BUS): 
 Nejjednodušší způsob zapojení počítačů do sítě, kde se všechny stanice propojují jediným kabelem (hlavní kabel/segment/páteř), který spojuje všechny PC.
 ### Kruhová topologie (RING): 
@@ -114,6 +115,7 @@ Souhrn pravidel a úmluv standardizujících prvky sítě, jako jsou:
  
 
 ## ISO/OSI a TCP/IP model
-
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
  
  

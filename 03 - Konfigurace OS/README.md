@@ -18,7 +18,7 @@ Soubor obsahuje informace o uživatelích, kteří mají přístup do systému. 
 > - 0 - GID
 > - root - komentář
 > - /root - cesta k domovskému adresáři uživatele
-> - /bin/ash - cesta k uživatelskému shellu
+> - /bin/bash - cesta k uživatelskému shellu
 
 ### /etc/shadow
 Soubor obsahuje zašifrovaná hesla uživatelů. Každý řádek souboru obsahuje informace o jednom uživateli. Jednotlivé položky jsou odděleny dvojtečkou. První položka je uživatelské jméno, druhá položka je zašifrované heslo, třetí položka je datum poslední změny hesla, čtvrtá položka je minimální počet dní, po které je možné heslo změnit, pátá položka je maximální počet dní, po které je možné heslo změnit, šestá položka je počet dní před upozorněním na změnu hesla, sedmá položka je počet dní po vypršení hesla, kdy je účet deaktivován, osmá položka je datum, kdy je účet deaktivován, devátá položka je rezervovaná pro budoucí použití.
