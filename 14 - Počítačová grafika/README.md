@@ -38,6 +38,10 @@
 - **Použití:**
     - reklama, propagace, WEB
     - hry..
+ - **Programy:**
+    - Microsoft Paint
+    - Paint.net
+    - Adobe Photoshop
 
 ## Vektorová grafika
 
@@ -60,7 +64,10 @@
     - tvorba fontů
     - tvorba diagramů, schémat, animací
     - počítačové modelování
-
+- **Programy:**
+    - Adobe Illustrator
+    - Something else
+  
 ## Barevná hloubka
 - Jeden ze základních parametrů RGB barevného modelu
 - Určuje kolik odstínů barev může mít obrázek resp. z kolika barev se skládá daný bod
@@ -257,8 +264,13 @@ obrázek proto zabere 240 000 bodů · 3 B = 720 000 B, tj. cca 703 kB, tj. cca 
 - Odvozena z vektorové grafiky
 - Umožňuje pracovat v 3D prostoru
 - V 3D modelu (kvádr, krychle) se mohou vytvářet libovolné objekty trojrozměrného charakteru – objekt může grafik vylepšit texturou
-- Využití: - 3D modeling
-    - Filmové triky a animace
+- **Využití**:
+    - 3D modeling
+    - Filmové effekty a animace
     - Reklamní propagace
     - Umění
     - Hry
+    - Architektický návrh
+- **Programy:**
+    - Blender
+    - Maya
