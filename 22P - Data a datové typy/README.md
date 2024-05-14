@@ -34,7 +34,7 @@ Unsigned mají plnou hodnotu, ale nemohou jít do mínusu, signed mají hodnotu 
 
 ##### Signed byte
 
-7 bitů ... -127 až 127
+7 bitů ... -128 až 127
 
 0|0000000 - první bit se používá pro znaménko - 0 +, 1 -
 
@@ -48,6 +48,13 @@ Floating point číslo (desetinné)
 
 Skládá se ze tří částí sign, exponent a mantissa
 
+Mnoho jazyků nabízí typy, jež alespoň částečně splňují IEE-754 (standard pro čísla s plovoucí desetinnou čárkou)
+
+Většinou je exponent i mantissa v dvojkové soustavě:  
+Reprezentace typu double (IEE-754 Binary64) v paměti:  
+![Reprezentace typu double (IEE-754 Binary64) v paměti](../Obrazky/IEEE_754_Double_Floating_Point_Format.svg)  
+Zdroj: By Codekaizen - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=3595583
+
 $$
 4,206923 * 10^4 = 42069,23
 $$
@@ -58,7 +65,7 @@ Exponent je 4
 
 Sign je 0
 
-Pro float se většinou používá 64 bitů, 1 bit pro sign, 11 pro exponent a zbytek pro mantissu
+Pro double se většinou používá 64 bitů, 1 bit pro sign, 11 pro exponent a zbytek pro mantissu
 
 Floating point čísla jsou nepřesná
 
@@ -70,6 +77,13 @@ Typickým příkladem pro nepřesnost floatů je `0.1 + 0.2` správně by mělo 
 
 ## Složené datové typy:
 
+Složené (kompozitní) datové typy se skládají z kompozitních i nekompozitních (vestavěných - typů, jež v jazyku nelze vytvořit (nelze vytvořit typ s totožným chováním pamětí a implementací), tyto vestavěné typy občas obsahují i referenční typy (string, object, array, ...), jedná se zejména o jazyky s GC)
+
+Některé jazyky dělí typy dle jejich umístění:
+- stack (zásobník) - struct
+- heap (halda) - class
+
+Typy:
 - **pole (array/list)** - Skupina prvků stejného datového typu uložených za sebou v paměti.
 
 - **řetězec (string)** - Sekvence znaků uložená v paměti, často používaná pro reprezentaci textu.
@@ -158,6 +172,7 @@ Většina jazyků povoluje implicitní přetypování. To je povoleno pouze v p�
 Dynamické jazyky kontrolují typy proměnných při runtimu, Statické jazyky při kompilaci. Typicky statické jazyky jsou Java nebo C#, dynamické Javascript
 
 ### Kompilované/interpretované jazyky
+Zde se bavíme hlavně o primárním účelu jazyka, protože jakýkoli jazyk může být interpretován či zkompilován.
 
 - **Kompilované jazyky** - Jsou přeloženy do strojového kódu před spuštěním.
 
