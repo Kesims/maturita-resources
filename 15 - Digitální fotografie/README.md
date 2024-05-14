@@ -224,15 +224,6 @@ Digitální stěny:
 - Složitá konstrukce objektivu je nezbytná pro eliminaci optických vad, které se vyskytují u jednoduchých čoček
 
 ## Typy objektivů podle ohniskové vzdálenosti a jejich použití
-- Ultra širokoúhlé, tzv. rybí oka: cca 8–10 mm; stylizované portréty, krajiny, interiéry
-- Širokoúhlé: 10–30 mm; krajina, reportáž, interiér, architektura
-- Střední (základní): 30–80 mm; většina fotografických žánrů, včetně portrétů (50 mm, 80mm, 100 mm)
-- Kratší (portrétní) teleobjektivy: 80–135 mm
-- Teleobjektivy: 100–600 mm; sport, reportáž<br>
-<br>
----
-<br>
-
 - **Rybí oko (fisheye)**:
     - Ohnisková vzdálenost: 6 až 8 mm
     - Extrémně široký obrazový úhel: 180° až 220°
