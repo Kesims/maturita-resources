@@ -3,49 +3,49 @@
 
 Internetový marketing, často označovaný také jako **online marketing nebo digitální marketing**,
 zahrnuje různé strategie a techniky používané k **propagaci produktů a služeb prostřednictvím internetu**. 
-
+# Typy optimalizace 
 ## 1. SEO (Search Engine Optimization)
 **SEO je proces optimalizace webových stránek tak, aby se umísťovaly na předních místech ve výsledcích vyhledávačů jako Google**. Cílem SEO je zvýšit organickou návštěvnost webových stránek.
 ### SEO zahrnuje:
 - **On-page SEO: Optimalizace obsahu na webové stránce, včetně klíčových slov, meta popisků, nadpisů a interních odkazů.**
 - **Off-page SEO: Aktivity mimo webové stránky**, které zlepšují její autoritu a reputaci, například **zpětné odkazy (backlinks)**.
 - **Technické SEO: Optimalizace technických aspektů webu, jako je rychlost načítání, mobilní přístupnost** a struktura URL.
-
-## 2. PPC (Pay-Per-Click)
+# Typy advertisingu
+## 1. PPC (Pay-Per-Click)
 PPC je model internetové reklamy, kde **inzerenti platí pokaždé, když je na jejich reklamu kliknuto**. 
 Nejznámější platformou pro PPC je **Google Ads**. PPC reklamy mohou být také umístěny na sociálních sítích, jako jsou **Facebook Ads nebo Instagram Ads**.
 
-## 3. Sociální média
+## 2. Sociální média
 Marketing na sociálních sítích zahrnuje **využití platforem jako Facebook, Instagram, Twitter, LinkedIn, TikTok a dalších k propagaci produktů a služeb**. 
 
 ### Tato forma marketingu zahrnuje:
 - Vytváření a sdílení obsahu: **Fotky, videa, blogové příspěvky a další formáty obsahu**.
 - Placená reklama: **Reklamy cílené na specifické demografické skupiny**.
 - Interakce se zákazníky: **Komunikace s fanoušky** a zákazníky prostřednictvím komentářů, zpráv a příspěvků.
+### Typy reklam na socialnich medii :
+#### A. Affiliate marketing
+Affiliate marketing je typ online marketingu, kde **firma platí provizi externím partnerům (affiliate)**, 
+kteří přivedou návštěvníky nebo zákazníky na jejich webové stránky **prostřednictvím svých marketingových aktivit**. 
+Affilates využívají různé metody, včetně blogů, recenzí produktů a sociálních médií.
 
-## 4. E-mailový marketing
+#### B. Influencer marketing
+Influencer marketing zahrnuje **spolupráci s lidmi, kteří mají velký vliv na sociálních sítích a mohou oslovit velké publikum**. 
+Společnosti často spolupracují s **influencery**, aby propagovali své produkty nebo služby a využívali jejich **důvěryhodnosti a vlivu na jejich publikum**.
+
+### Analytika a měření
+Úspěšnost internetového marketingu je měřena pomocí různých analytických nástrojů, které sledují výkon kampaní a návštěvnost webových stránek. 
+**Google Analytics je jedním z nejpoužívanějších nástrojů pro analýzu webové návštěvnosti**, zatímco sociální sítě a **e-mailové platformy často nabízejí vlastní analytické nástroje**.
+
+## 3. E-mailový marketing
 E-mailový marketing je proces odesílání komerčních zpráv cílené skupině lidí prostřednictvím e-mailu. 
 ### Efektivní e-mailový marketing zahrnuje:
 - Segmentace seznamu: **Rozdělení odběratelů do skupin** na základě jejich zájmů a chování.
 - Personalizace: **Přizpůsobení obsahu e-mailu podle příjemce**.
 - Automatizace: **Použití nástrojů pro automatické odesílání e-mailů v správný čas**.
 
-## 5. Obsahový marketing
+## 4. Obsahový marketing
 Obsahový marketing je strategie zaměřená na vytváření a distribuci hodnotného, relevantního a konzistentního obsahu za účelem přilákání a udržení jasně definovaného publika. 
 Mezi běžné formy obsahu patří blogové příspěvky, videa, infografiky, e-knihy a podcasty.
-
-## 6. Affiliate marketing
-Affiliate marketing je typ online marketingu, kde **firma platí provizi externím partnerům (affiliate)**, 
-kteří přivedou návštěvníky nebo zákazníky na jejich webové stránky **prostřednictvím svých marketingových aktivit**. 
-Affilates využívají různé metody, včetně blogů, recenzí produktů a sociálních médií.
-
-## 7. Influencer marketing
-Influencer marketing zahrnuje **spolupráci s lidmi, kteří mají velký vliv na sociálních sítích a mohou oslovit velké publikum**. 
-Společnosti často spolupracují s **influencery**, aby propagovali své produkty nebo služby a využívali jejich **důvěryhodnosti a vlivu na jejich publikum**.
-
-## 8. Analytika a měření
-Úspěšnost internetového marketingu je měřena pomocí různých analytických nástrojů, které sledují výkon kampaní a návštěvnost webových stránek. 
-**Google Analytics je jedním z nejpoužívanějších nástrojů pro analýzu webové návštěvnosti**, zatímco sociální sítě a **e-mailové platformy často nabízejí vlastní analytické nástroje**.
 
 # Správný postup pro vytváření reklamy
 
