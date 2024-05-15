@@ -10,10 +10,54 @@ zahrnuje různé strategie a techniky používané k **propagaci produktů a slu
 - **On-page SEO: Optimalizace obsahu na webové stránce, včetně klíčových slov, meta popisků, nadpisů a interních odkazů.**
 - **Off-page SEO: Aktivity mimo webové stránky**, které zlepšují její autoritu a reputaci, například **zpětné odkazy (backlinks)**.
 - **Technické SEO: Optimalizace technických aspektů webu, jako je rychlost načítání, mobilní přístupnost** a struktura URL.
+
 # Typy advertisingu
 ## 1. PPC (Pay-Per-Click)
 PPC je model internetové reklamy, kde **inzerenti platí pokaždé, když je na jejich reklamu kliknuto**. 
 Nejznámější platformou pro PPC je **Google Ads**. PPC reklamy mohou být také umístěny na sociálních sítích, jako jsou **Facebook Ads nebo Instagram Ads**.
+### Charakteristiky PPC reklamy
+- **Platba za kliknutí**: Inzerenti platí pouze tehdy, když uživatel klikne na reklamu.
+- **Cílení**: PPC reklamy lze přesně cílit na specifické skupiny uživatelů podle demografických údajů, zájmů, chování a dalších parametrů.
+- **Měření a optimalizace**: PPC kampaně jsou snadno měřitelné pomocí analytických nástrojů. Můžete sledovat různé metriky jako CTR (click-through rate), konverzní poměr a náklady na konverzi.
+- **Rychlé výsledky**: PPC reklamy mohou přinést okamžité výsledky, jakmile jsou spuštěny.
+- **Flexibilita rozpočtu**: Inzerenti mohou snadno upravovat své rozpočty a nabídky podle výkonu kampaně.
+
+### Příklady PPC reklam
+- **Google Ads**: Reklamy ve vyhledávání a obsahové síti Google.
+- **Sociální média**: Reklamy na platformách jako Facebook, Instagram, LinkedIn, Twitter.
+- **YouTube reklamy**: Reklamy přehrávané před nebo během videí.
+
+## 2. Normální internetová reklama
+
+Normální internetová reklama, často označovaná jako displejová reklama nebo bannerová reklama, zahrnuje různé formy online reklamy, které nevyužívají model platby za kliknutí.
+
+### Charakteristiky normální internetové reklamy
+- **Platba za zobrazení (CPM)**: Inzerenti platí za každých tisíc zobrazení reklamy (Cost Per Mille - CPM).
+- **Různé formáty**: Může zahrnovat bannery, videa, pop-up okna, interaktivní reklamy a další.
+- **Cílení**: Může být také cílená podle demografie, zájmů a chování uživatelů, ale často méně přesně než PPC reklama.
+- **Měření a analýza**: Výkonnost je měřitelná pomocí metrik jako zobrazení, počet kliknutí, CTR a konverze.
+- **Značková povědomí**: Často používaná pro budování značky a zvyšování povědomí, ne nutně pro okamžité konverze.
+
+### Příklady normální internetové reklamy
+- **Bannerové reklamy**: Objevují se na webových stránkách jako obrázky nebo animace.
+- **Video reklamy**: Přehrávány před, během nebo po videích na platformách jako YouTube.
+- **Rich media reklamy**: Interaktivní reklamy, které mohou zahrnovat animace, videa nebo hry.
+- **Native reklamy**: Reklamy, které se přirozeně integrují do obsahu webových stránek nebo aplikací.
+
+## Srovnání PPC a normální internetové reklamy
+
+| **Charakteristika**           | **PPC reklama**                           | **Normální internetová reklama**        |
+|-------------------------------|-------------------------------------------|----------------------------------------|
+| **Model platby**              | Platba za kliknutí                        | Platba za zobrazení (CPM)              |
+| **Cílení**                    | Vysoce cílené, specifické demografie      | Cílené, ale často méně přesné (dobré pro rozšíření demografie)|
+| **Měření a analýza**          | Snadné, přesné                            | Také měřitelné, ale s různými metrikami|
+| **Rychlost výsledků**         | Okamžité                                  | Může být delší doba, závisí na účelu   |
+| **Flexibilita rozpočtu**      | Vysoce flexibilní                         | Méně flexibilní, často fixní rozpočet  |
+| **Hlavní využití**            | Přímé reakce, konverze                    | Značkové povědomí, široký dosah        |
+
+Oba typy internetových reklam mají své výhody a nevýhody. Výběr správné strategie závisí na specifických cílech, rozpočtu a cílové skupině firmy. Často je nejlepší kombinovat oba přístupy, aby se dosáhlo maximálního efektu.
+
+Každý typ reklamy má své výhody a nevýhody. Výběr správné strategie závisí na specifických cílech, rozpočtu a cílové skupině firmy. Často je nejlepší kombinovat oba přístupy, aby se dosáhlo maximálního efektu.
 
 ## 2. Sociální média
 Marketing na sociálních sítích zahrnuje **využití platforem jako Facebook, Instagram, Twitter, LinkedIn, TikTok a dalších k propagaci produktů a služeb**. 
