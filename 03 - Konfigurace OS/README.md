@@ -161,6 +161,26 @@ Jak určit čísla?
 
 Tudíž `rw-` bude  4+2 = 6
 
+### Setuid - asi navíc
+Toto oprávnění nemá vliv na adresáře.
+Při spuštění souboru s tímto oprávněním je soubor spuštěn s oprávněními vlastníka tohoto souboru, ne aktuálního uživatele.
+Příkladem může být například `passwd` příkaz, jenž zapisuje do `/etc/shadow`, což může pouze root.
+Tento příkaz (bez argumentů) však může použít jakýkoli uživatel, znající své heslo, pro změnu vlastního hesla.
+Důvodem je oprávnění setuid, jež se zobrazuje jako malé __s__ namísto __x__ ve vlastníkových oprávněních.
+> - `-rwsr-xr-x 1 root root 59976 Nov 24  2022 /usr/bin/passwd`
+
+### Setgid - asi navíc
+Toto oprávnění ovlivňuje adresáře i soubory.
+
+#### Soubory - asi navíc
+Pokud je aplikován na soubor, tak má daný soubor oprávnění skupiny, jíž patří, nikoliv skupiny toho, kdo jej spustil.
+(Funguje to stejně jako __setuid__, akorát zde není soubor spuštěn s oprávněními vlastníka, ale s oprávněními jeho skupiny.)
+
+#### Adresáře - asi navíc
+V případě, že je aplikováno na adresář, tak je každému nově vytvořenému souboru v tomto adresáři automaticky přiřazena skupina rodičovského adresáře.
+Tedy pokud adresář se __setgid__ patří skupině __blue__, pak kdokoli v tomto adresáři vytvoří soubor, tak mu bude automaticky přiřazena skupina __blue__.
+Pokud by adresář neměl __setgid__, pak by byla souboru, vytvořeném v tomto adresáři, přiřazena skupina jeho tvůrce.
+
 
 ### Sticky bit (relativně navíc, ale pan Horálek říkal, že nás nevyhodí od zkoušky, když to zmíníme)
 Toto oprávnění nemá vliv na jednotlivé soubory. Na úrovni adresáře však omezuje mazání souborů. Pouze vlastník (a root) souboru může soubor v rámci daného adresáře odstranit
@@ -168,7 +188,21 @@ Toto oprávnění nemá vliv na jednotlivé soubory. Na úrovni adresáře však
 > - `drwxrwxrwt. 15 root root 4096 Sep 22 15:28 /tmp/`
 
 ## Principy tvorby skriptů v shellu
-Skripty v shellu jsou psány v textovém editoru a uloženy s příponou `.sh`. Skript je poté spuštěn v terminálu příkazem `sh nazev_skriptu.sh`. Skript může být spuštěn i přímo, pokud je nastaveno oprávnění pro spuštění. V tomto případě je skript spuštěn příkazem `./nazev_skriptu.sh`. Skript může být spuštěn i v jiném skriptu.
+Skripty v shellu jsou psány v textovém editoru a uloženy s příponou `.sh` (přípona však není potřebná pro jakoukoli manipulaci se souborem, je zde pouze pro informaci o typu souboru - co to je? Obrázek? Skript? Video?).  
+
+Každý script by měl začínat řádkem, na němž se nachází tzv. shebang `#! {ABSOLUTNÍ CESTA K INTERPRETRU - NAPŘ. '/bin/bash', '/bin/sh', ...}`.  
+Např.: 
+- \#! /bin/bash
+- \#! /bin/sh
+
+Aby měl tento řádek efekt, je nutné mu dát execute oprávnění a spustit ho pomocí `./nazev_skriptu.sh`. V tomto případě je skript spuštěn pomocí programu specifikovaného na shebang řádku. Tímto způsobem můžeme klidně spustit php script nebo perl script (budou se lišit syntaxí a shebang řádkem).  
+[Jinak bash toho umí víc než sh](https://www.geeksforgeeks.org/difference-between-sh-and-bash/).  
+
+Skript je také možné spustit pomocí určitého programu (v tomto případě shellu):   
+- `sh nazev_skriptu.sh`  
+- `bash nazev_skriptu.sh`.
+
+Skript může být spuštěn i v jiném skriptu.
 
 ### Proměnné
 Proměnné v shellu se deklarují bez typu. Proměnné mohou obsahovat pouze písmena, číslice a podtržítka. Proměnné se deklarují pomocí `nazev_promenne=hodnota` a volají se pomocí `$nazev_promenne`. Proměnné mohou být i globální, pokud jsou deklarovány mimo skript.
