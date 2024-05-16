@@ -1,10 +1,17 @@
-## Skriptovací jazyky server/prohlížeč
-* **Client** - javascript, webassembly
-* **Server** - cokoliv (nodejs, java, c#, python, PHP)
+# Skriptovací jazyky pro server a prohlížeč
 
-## PHP a práce s databází
+## Prohlížeč
+- **JavaScript**: Jedná se o primární skriptovací jazyk pro webové prohlížeče. Používá se k interaktivním funkcím na straně klienta, jako jsou animace, validace formulářů, interakce s uživatelem atd.
+- **WebAssembly**: Nová technologie umožňující spouštění vysoce výkonných jazyků, jako je například C/C++, přímo v prohlížeči. Poskytuje výrazné zrychlení výkonu a umožňuje portabilitu kódu mezi různými platformami.
+
+## Server
+- **Node.js**: Založený na JavaScriptu, Node.js je populárním serverovým prostředím pro běh JavaScriptového kódu mimo prohlížeč. Je známý pro svou efektivitu a škálovatelnost při tvorbě webových serverů a aplikací.
+- **Java**: Jazyk s širokým použitím pro vývoj serverových aplikací. Je známý pro svou spolehlivost, škálovatelnost a silnou podporu komunity.
+- **Python**: Oblíbený pro svou jednoduchost a čitelnost kódu. Python je často používán pro vývoj webových aplikací, API a automatizaci serverových úloh.
+- **PHP**: Jazyk navržený speciálně pro vývoj webových aplikací. PHP má dlouhou historii používání na webu a je stále oblíbený pro tvorbu dynamických webových stránek a aplikací.
+
+# PHP a práce s databází
 PHP je často využíván pro práci s databázemi, ať už pomocí nativních rozhraní nebo pomocí frameworků jako je například Laravel, který poskytuje jednoduché a elegantní ORM (Object-Relational Mapping) pro manipulaci s databází.
-
 
 ## Formuláře - metody POST/GET
 Data můžeme přijímat pouze 2 způsoby: 
