@@ -37,7 +37,9 @@ struktura xml a json<br>
 # XAML/WinForms 
 ## Winforms
 • Základní platformu pro vývoj "klasických" aplikací pro Windows se standardním vzhledem a použitím standardních ovládacích prvků
+
 • UI framework
+
 • Poskytuje vývojářům nástroje pro vytváření windows desktopových aplikací 
 ## WPF (Windows Presentation Foundation)
     • Současná platforma pro vývoj desktopových aplikací systému Windows
