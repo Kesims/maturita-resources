@@ -123,6 +123,7 @@ grafický tablet
 
 • Práce s tabletem je daleko snazší a přirozenější než kreslení myší
 
+# Výstupní zařízení
 # MONITORY
 
 • Slouží k viditelnému zobrazení textu a grafiky
