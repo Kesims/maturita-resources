@@ -184,13 +184,35 @@ grafický tablet
 
 • Technologie IPS = v základním stavu filtr nepropouští světlo = tím vznikají více věrohodné barvy a široké pozorovací úhly
 
-• Nedochází ke změně odstínů jako u TN
-
-• Nevýhodou je, že na okrajích je slabší elektrostatické pole, proto se krystaly plně neotáčí
-
-• MVA monitory
-
 • Analogové rozhraní = D-SUB; Digitální rozhraní – DVI, HDMI
+
+## LED (Light emiting diode) monitor
+
+LED monitor (Light Emitting Diode monitor) využívá technologii, která kombinuje principy LCD (Liquid Crystal Display) a LED podsvícení. Zde je stručné vysvětlení, jak funguje:
+
+1. **LCD panel:**
+   - Skládá se z tekutých krystalů, které mění svůj stav při aplikaci elektrického proudu.
+   - Krystaly ovlivňují, kolik světla projde jednotlivými pixely, čímž vytvářejí obraz.
+
+2. **LED podsvícení:**
+   - Místo tradičního CCFL (Cold Cathode Fluorescent Lamp) podsvícení využívají LED monitory LED diody.
+   - LED diody jsou umístěny buď po okrajích panelu (edge-lit) nebo za panelem (full-array).
+   - LED diody poskytují jasnější a rovnoměrnější podsvícení, čímž zlepšují kvalitu obrazu a kontrast.
+
+3. **Barevné filtry:**
+   - Před LCD panelem jsou umístěny barevné filtry (červený, zelený a modrý) pro každý pixel.
+   - Kombinací různých intenzit světla přes tyto filtry se vytvářejí různé barvy.
+
+4. **Řízení jasu a kontrastu:**
+   - LED monitory umožňují dynamické řízení jasu a kontrastu díky schopnosti rychle měnit intenzitu světla z LED diod.
+   - To vede k lepší energetické účinnosti a delší životnosti.
+
+5. **Výhody LED technologie:**
+   - **Energetická účinnost:** LED diody spotřebovávají méně energie než CCFL.
+   - **Delší životnost:** LED diody mají delší životnost a nižší náchylnost k vyhoření.
+   - **Lepší kvalita obrazu:** Vyšší jas, lepší kontrast a širší barevný gamut.
+
+LED monitory jsou preferovanou volbou pro mnoho uživatelů díky jejich vyšší kvalitě obrazu, energetické účinnosti a spolehlivosti.
 
 # VIDEOPROJEKTORY
 
