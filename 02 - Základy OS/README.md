@@ -119,4 +119,78 @@
   - _Další nástroje jako Správce serveru, bezpečnosti, úložiště jsou specifické pro servery a poskytují pokročilé možnosti pro správu serverových OS._
 
 
-NTFS, exFAT, FAT32, APFS
+# Souborové systémy: NTFS, exFAT, FAT32, APFS
+
+Souborové systémy jsou struktury, které operační systém používá k organizaci a správě souborů na pevném disku nebo jiném úložném zařízení. Zde jsou podrobné informace o čtyřech populárních souborových systémech: NTFS, exFAT, FAT32 a APFS.
+
+## 1. NTFS (New Technology File System)
+
+**Vývojář:** Microsoft  
+**Použití:** Primárně ve Windows  
+**Rok uvedení:** 1993 (Windows NT 3.1)
+
+### Klíčové vlastnosti:
+- **Podpora velkých souborů a disků:** NTFS podporuje velmi velké soubory a diskové oddíly (až do velikosti 16 EB v teorii, prakticky limitováno na 256 TB).
+- **Bezpečnost:** Podpora šifrování, oprávnění a kvót. NTFS umožňuje nastavovat přístupová práva na soubory a složky.
+- **Žurnálování:** Zajišťuje vyšší spolehlivost a integritu dat. Žurnálování umožňuje obnovení systému po chybě nebo výpadku proudu.
+- **Komprese:** Možnost komprese souborů a složek, což šetří místo na disku.
+- **Podpora dlouhých názvů:** NTFS podporuje dlouhé názvy souborů a Unicode znaky.
+
+### Použití:
+- Ideální pro moderní pevné disky a SSD, kde je důležitá bezpečnost a spolehlivost.
+- Primárně používán ve všech verzích Windows od Windows XP po Windows 11.
+
+## 2. exFAT (Extended File Allocation Table)
+
+**Vývojář:** Microsoft  
+**Použití:** Přenosná zařízení, jako jsou USB flash disky a paměťové karty  
+**Rok uvedení:** 2006
+
+### Klíčové vlastnosti:
+- **Podpora velkých souborů a disků:** exFAT podporuje soubory větší než 4 GB, což je limit FAT32. Maximální velikost souboru je 16 EB.
+- **Kompatibilita:** Podporován mnoha operačními systémy, včetně Windows, macOS a některých verzí Linuxu.
+- **Efektivita:** Méně režijního zatížení než NTFS, což znamená lepší výkon na přenosných zařízeních.
+
+### Použití:
+- Vhodný pro flash disky, externí pevné disky a paměťové karty, které potřebují kompatibilitu mezi různými operačními systémy.
+- Doporučený pro zařízení, kde jsou potřeba velké soubory, jako jsou 4K videa.
+
+## 3. FAT32 (File Allocation Table 32)
+
+**Vývojář:** Microsoft  
+**Použití:** Přenosná zařízení a starší počítačové systémy  
+**Rok uvedení:** 1996
+
+### Klíčové vlastnosti:
+- **Podpora souborů a disků:** Podpora souborů až do velikosti 4 GB a diskových oddílů až do 8 TB.
+- **Kompatibilita:** Vysoká kompatibilita s většinou operačních systémů, včetně Windows, macOS, Linux a většiny herních konzolí a přenosných zařízení.
+
+### Použití:
+- Vhodný pro malé a přenosné úložné zařízení, kde je požadována vysoká kompatibilita.
+- Ideální pro zařízení, kde jsou soubory menší než 4 GB, jako jsou starší hry a aplikace.
+
+## 4. APFS (Apple File System)
+
+**Vývojář:** Apple  
+**Použití:** Zařízení Apple, včetně macOS, iOS, watchOS a tvOS  
+**Rok uvedení:** 2017
+
+### Klíčové vlastnosti:
+- **Optimalizace pro flash a SSD:** APFS je navržen pro optimalizaci výkonu na moderních SSD discích.
+- **Šifrování:** Silné šifrování pro vyšší bezpečnost dat, podporuje šifrování na úrovni souboru a disku.
+- **Snapshoty:** Podpora snapshotů, což umožňuje rychlé zálohování a obnovení systému.
+- **Rychlost:** Vysoký výkon při práci se soubory a složkami díky efektivnímu způsobu správy volného prostoru.
+- **Efektivita:** Zlepšená správa volného místa a metadata, což zvyšuje celkový výkon systému.
+
+### Použití:
+- Standardní souborový systém pro všechna novější zařízení Apple, včetně MacBooků, iPhonů, iPadů, Apple Watch a Apple TV.
+- Doporučený pro všechny uživatele Apple zařízení, kteří chtějí maximální výkon a bezpečnost.
+
+## Shrnutí
+
+- **NTFS** je ideální pro Windows systémy, kde je důležitá bezpečnost a podpora velkých souborů.
+- **exFAT** je vhodný pro přenosná úložná zařízení, kde je potřeba podpora velkých souborů a vysoká kompatibilita.
+- **FAT32** je starší, ale stále populární pro malé úložné zařízení díky své široké kompatibilitě.
+- **APFS** je moderní souborový systém optimalizovaný pro Apple zařízení, poskytující vysoký výkon a bezpečnost.
+
+Každý z těchto souborových systémů má své specifické výhody a nevýhody, a výběr závisí na konkrétních potřebách uživatele a zařízení, na kterém bude používán.
