@@ -158,6 +158,37 @@ Zdroje napájení opět můžeme různě dělit podle jejich vlastností:
 **Skříň počítače slouží k ochraně a chlazení všech komponent**.
 Moderní skříně mají různé velikosti a designy, které umožňují snadnou instalaci
 
+## Operační systém
+### 1. Windows
+#### Instalace:
+
+1. Příprava instalačního média: Stáhněte instalační ISO soubor z oficiálních stránek Microsoftu a vytvořte instalační USB disk pomocí nástroje jako je Windows Media Creation Tool.
+2. Bootování z instalačního média: Vložte instalační USB do počítače a restartujte ho. Vstupte do BIOS/UEFI a nastavte bootování z USB.
+3. Instalační proces: Následujte pokyny na obrazovce, zadejte licenční klíč, vyberte disk pro instalaci a pokračujte dle pokynů.
+4. Dokončení instalace: Po instalaci proveďte základní nastavení jako je vytvoření uživatelského účtu, připojení k síti a instalace aktualizací.
+
+### 2. macOS
+Instalace:
+1. Stahování macOS: Stáhněte instalační program z Mac App Store nebo z oficiálních stránek Apple.
+2. Vytvoření bootovacího USB: Použijte nástroj Terminal a příkaz createinstallmedia k vytvoření bootovacího USB.
+3. Bootování z USB: Připojte USB disk k Macu a při restartu podržte klávesu Option (⌥) pro výběr instalačního média.
+4. Instalační proces: Vyberte disk pro instalaci, postupujte dle pokynů na obrazovce a po dokončení instalace proveďte základní nastavení.
+
+### 3. Linux
+Distribuce:
+- Ubuntu
+- Fedora
+- Debian
+Instalace :
+1. Stažení distribuce: Stáhněte ISO soubor z oficiálních stránek Ubuntu.
+2. Vytvoření bootovacího USB: Použijte nástroj jako je Rufus nebo balenaEtcher k vytvoření bootovacího USB disku.
+3. Bootování z USB: Vložte USB disk do počítače, restartujte a nastavte bootování z USB v BIOS/UEFI.
+4. Instalační proces: Vyberte možnost instalace Ubuntu, nastavte jazyk, diskové oddíly a následujte pokyny na obrazovce.
+5. Dokončení instalace: Po instalaci nastavte uživatelský účet, připojte se k síti a aktualizujte systém.
+**VÍCE INFA V OTAZCE 2 A 3**
+## Periferní zařízení
+**OTAZKA 4!!**
+
 ## Stavba počítače:
 #### 1. Začněte s instalací procesoru na základní desku.
 #### 2. Aplikujte teplovodivá pastu na CPu a připojte chladič procesoru k procesoru.
