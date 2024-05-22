@@ -113,7 +113,7 @@ Zařízení v síti pak vystupují jako
 - **Peripheral** - zařízení, které odhaluje svou přítomnost a přijímá žádosti o spojení
 
 
-Data tato zařízení vystavují pomocí tzv. **GATT** (Generic Attribute Profile), který definuje služby a charakteristiky, které
+Data tato zařízení vystavují pomocí tzv. **G(Y)ATT** (Generic Attribute Profile), který definuje služby a charakteristiky, které
 zařízení nabízí. Každá služba může mít několik charakteristik, které mohou být buď čtené, zapisovány, nebo mohou notifikovat
 změny.
 
