@@ -11,6 +11,8 @@
 - DNS - ez
 - DHCP - pz
 
+
+
 ### Uveďte hlavní důvody, proč do serveru nasadit serverové řešení
 
 ### Popište funkcionality rolí (active directory certificate services, active directory domain service, dhcp server, dns server, file and storage server, hyperv, windows server update services)

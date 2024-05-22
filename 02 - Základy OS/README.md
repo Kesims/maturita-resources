@@ -1,20 +1,28 @@
 # 2 - Základy OS
 ## Terminologie
 
-- **Operační systém (OS)** - SW, který počítači říká, jak se chovat. Ovládá HW, spouští programy, rozvrhuje úkoly a zdroje a poskytuje uživateli rozhraní k počítači
+- **Operační systém (OS)** - SW, který ovládá HW, spouští programy, rozvrhuje úkoly (přiděluje zdroje jednotlivým procesům) a zdroje a poskytuje uživateli rozhraní k počítači
 - **Proces** - Výkon instrukcí po načtení z paměti
 - **Kernel** - Jádro OS, slouží jako hlavní rozhraní mezi HW a procesy OS
 - **GUI (Graphical User Interface)** - Grafické rozhraní
 - **TUI (Text-based UI)** - Textové rozhraní
 - **API** (Application Programming Interface)** - SW, který umožňuje komunikaci mezi dvěma aplikacemi
-- **GNOME (GNU Network Object Model Environment)** - GUI + set PC aplikací pro uživatele Linuxu
-- **KDE (K Desktop Environment)** - Open source GUI pro Unix a Linux a dokonce Windows a Mac
+- **GNOME (GNU Network Object Model Environment)** - GUI + set PC aplikací pro uživatele Linuxu. 
+- **KDE (K Desktop Environment)** - Open source GUI pro Unix a Linux a dokonce Windows a Mac. KDE je podobnější na Windows, je otevřenější a konfigurovatelnější než GNOME.
+- **LTS (Long Term Support)** - Stabilní verze OS, která je podporována po delší dobu.
+- **Update** - Aktualizace SW, která opravuje chyby, zlepšuje výkon a přidává nové funkce. (např. běžný Windows Update)
+- **Upgrade** - Přechod na novější verzi OS. (např. Windows 10 na Windows 11)
 
 ## Základní funkce OS
 
-- **ovládání počítače:** umožňuje uživateli spouštět programy, předávat jim vstupy a získávat jejich výstupy s výsledky
+- **výkon instrukcí** -> správa procesů, přiděluje a odebírá procesům systémové prostředky počítače
+- **správa paměti** -> správa paměti, kterou procesy používají k ukládání a načítání dat
+- **řízení CPU**
+- **souborový systém**
 - **abstrakce hardware:** vytváří rozhraní pro programy, které abstrahuje ovládání hardware a dalších funkcí do snadno použitelných funkcí (API)
-- **správa prostředků:** přiděluje a odebírá procesům systémové prostředky počítače
+
+potažmo potom...
+- **ovládání počítače:** umožňuje uživateli spouštět programy, předávat jim vstupy a získávat jejich výstupy s výsledky
 
 ## Proces
 
@@ -74,8 +82,8 @@
 
 
 ### Mikrojádro
+- spravuje pouze přerušení, plánování a komunikaci mezi procesy
 - velmi **malé, jednoduché jádro** OS s pouze **nejzákladnějšími funkcemi** pro menší objem bežícího kódu
-- Typicky správu paměti a podporu pro plánování procesů a meziprocesové komunikace
 - **Ostatní funkce** poskytuje jako samostatné servery, které běží **v uživatelském prostoru**
 - **Bezpečné, škálovatelné, lehčí na údržbu**
 ![microcore.png](microcore.png)
@@ -98,7 +106,7 @@
 
 > Role serveru - skupina služeb, které poskytuje server
 
-- **Správce serveru:**
+- **Správce serveru (Server manager):**
   - Poskytuje rozsáhlé možnosti pro správu serveru, včetně správy rolí, funkcí a konfigurace serveru.
 - **Správce bezpečnosti:**
   - Slouží k nastavení a správě bezpečnostních politik, firewallu, šifrování a dalších aspektů zabezpečení serveru.
@@ -118,6 +126,9 @@
   - **Správce tiskárny:** Umožňuje správu tiskáren, nastavení tiskových úloh a ověření stavu tiskáren.
   - _Další nástroje jako Správce serveru, bezpečnosti, úložiště jsou specifické pro servery a poskytují pokročilé možnosti pro správu serverových OS._
 
+  
+
+---
 
 # Souborové systémy: NTFS, exFAT, FAT32, APFS
 

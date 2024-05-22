@@ -92,6 +92,9 @@ Představuje vysokorychlostní páteř sítě, která musí být velmi spolehliv
 
 
 ## Základní topologie sítě:
+
+- Logické topologie - **Token Ring** (bezkolizní, typicky průmysl) a Anarchie (**Ethernet**) (bez detekce kolizí). 
+
 ![img_3.png](img_3.png)
 ### Sběrnicová topologie (BUS): 
 Nejjednodušší způsob zapojení počítačů do sítě, kde se všechny stanice propojují jediným kabelem (hlavní kabel/segment/páteř), který spojuje všechny PC.
@@ -114,8 +117,28 @@ Souhrn pravidel a úmluv standardizujících prvky sítě, jako jsou:
 <br> •	Protokoly pro opravu chyb, zasílání požadavků a příjem souborů ze serveru, přenos dat mezi klientem a serverem a pro internetové telefony. Příkladem jsou například modely ISO/OSI (spíše teoretický) a TCP/IP (praktický).
  
 
-## ISO/OSI a TCP/IP model
+## ISO/OSI (standard) a TCP/IP model
 ![img_1.png](img_1.png)
 ![img_2.png](img_2.png)
  
- 
+
+
+**Fyzická vrstva** - jedničky, nuly (v podobě napětí). 4A/4B kódování = 4 bity se převedou na 5 bitů (tak aby vždy byla aspoň 1 změna), aby se zvýšila odolnost proti chybám. Ethernet - 8 drátů, 4 dvojice. 100mbit využívá 2 páry, gigabit všechny 4. (více viz otázka 6).
+
+**Datová vrstva** - LLC, MAC. Pracujeme s rámci Rámce mají hlavičku a patičku. Hlavička obsahuje MAC adresu odesílatele a příjemce, typ rámce. Patička obsahuje kontrolní součet. MAC adresy se "přebalují" v rámci lokálních sítí. MAC má 48-bitů, zapisuje se v hex, má část výrobce + náhodný kód. LLC - vytváří rámec, vkládá parametry headeru. ARP protokol používá tuto vrstvu.
+
+**Síťová vrstva** - Packety, adresace. IPv4, IPv6, ICMP. IP adresy - 32 bitů, rozděleny na 4 oktety. IPv4 - 4 miliardy adres, IPv6 (128 bitů) - 340 sextilionů. ICMP - protokol pro diagnostiku sítě, např. ping, traceroute. Maska sítě - určuje velikost pro síť a pro hosta. Třída A - maska /8, třída B - /16, třída C - /24. IPv6 lokální maska fe80, generuje se automaticky. Nedostupný vs neznámý u pingu - nedostupný = router neví, kam poslat, neznámý = cílový uzel neodpovídá.  Traceroute - sleduje cestu paketu, TTL se snižuje o 1, pokud dojde na 0, paket se zahodí a pošle se zpráva zpět. Ping - ICMP echo request, echo reply.
+
+**Transportní vrstva** TCP/UDP. UDP - nespolehlivý, bezspojový, např. DNS. TCP - three-way-handshake, spolehlivý, spojový, např. HTTP. Transportní vrstva také řeší čísla portů. 3 skupiny portů: well-known (0-1023), registered (1024-49151), dynamic (49152-65535).
+
+**Relační vrstva** - zajišťuje a udržuje spojení mezi aplikacemi.
+
+**Prezentační vrstva** - kóduje data.
+
+**Aplikační vrstva** - samotné služby s vlastními protokoly. DHCPv6: 3 typy: SLAAC (automatické přidělení, SLAAC pouze dodává default gateway), SLAAC+DHCPv6 (dává navíc DNS), stateful (klasické DHCP). DHCPv4: kroky - discovery (broadcast), offer (unicast), request (broadcast), ack (unicast). DNS - překlad doménových jmen na IP adresy. Stromová struktura DNS.
+
+
+----
+
+dále: 
+Trojvrstvá architektura v datacentrech.

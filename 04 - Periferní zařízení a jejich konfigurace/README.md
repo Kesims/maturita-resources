@@ -1,6 +1,12 @@
 # 4 - Periferní zařízení, členění, konektivita zařízení, způsob instalace a konfigurace.
 
-*Autor řešení maturitní otázky: pozdik*
+
+
+**Způsoby připojení periferií:**
+- Bezdrátově (Bluetooth)
+- Drátově (USB (výhoda stromové struktury, data i napájení), HDMI, VGA, DVI, DisplayPort, Thunderbolt, PS/2, RJ-45, RJ-11)
+
+Výhoda sériové komunikace - jednodušší kabeláž, možnost připojení více zařízení na jeden port
 
 # **Vstupní zařízení**
 

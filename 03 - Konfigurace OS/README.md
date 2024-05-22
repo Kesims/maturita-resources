@@ -259,3 +259,26 @@ exit 0
 ```
 
 
+zároveň I guess jak funguje disk? (viz otázka 11)
+
+Oddíly -> pouze logické dělení, nemá vliv na výkon apod., dělíme je v disk manageru. Musí být souvislými bloky.
+
+
+### Průběh instalace operačního systému:
+- vybíráme umístění
+- jaké balíčky chceme (zda například chceme gui)
+
+
+## Pojmy:
+1) PnP - Plug and Play - zařízení lze připojovat a odpojovat bez reinicializace systému
+2) ovladače - .sys soubory
+- hal - získává informace z hardwaru a předává je procesům
+- udev - daemon dynamické přiřazování zařízení (přijde mu to z nějaké socket api) -> pokusi se indetifikovat zařízení -> hledá ovladače -> založí objekty v sysfs -> skrze dbus komunikuje ke spuštěným procesům, že je dostupné nové zařízení (zpráva obsahuje cestu k /dev)
+- dbus - daemon pro správu interní komunikace procesů
+3) komunikace s periferiemi - pomocí ovladačů
+
+Komunikace: 
+- Zpráva - má jasně daný formát
+- Pipe - jedná se o stream
+
+

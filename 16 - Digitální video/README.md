@@ -555,3 +555,9 @@ daných kodeků)
   - Stručný plán událostí s časovou a příčinnou strukturou.
 
 ### Oscar, Český lev
+
+
+----
+**Známé otázky:**
+- shrňte historii filmu
+- co to je kodek

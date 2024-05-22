@@ -22,14 +22,17 @@ Existují dvě základní koncepce konstrukce:
 Procesor můžeme rozdělit na 3 základní funkční jednotky:
 
 1) **ALU (Arithmetic Logic Unit)** - provádí aritmetické a logické operace.
-2) **Řadič instrukcí** - zajišťuje načítání instrukcí z paměti a jejich vykonávání.
+2) **Řadič instrukcí** - zajišťuje načítání a kombinování instrukcí z paměti a jejich přesun do ALU.
 3) **Paměťová jednotka** - ukládá data a instrukce, se kterými procesor pracuje.
 
 
 ![img_1.png](img_1.png)
 
-Existuje několik různých architektur procesorů používaných v dnešních počítačíchß, 
+Existuje několik různých architektur procesorů používaných v dnešních počítačích, 
 z nichž každá má své vlastní charakteristiky a využití. 
+
+RISC vs CISC - rozdíl v počtu instrukcí. RISC má méně instrukcí.
+
 **Mezi nejběžnější architektury procesorů patří**:
 
 #### 1.1.1 x86: 
@@ -68,6 +71,22 @@ tím lépe může procesor optimalizovat přístup k datům.**
 
 Velikost L1 bývá maximálně stovky kilobajtů až jednotky megabytů,
 L2 bývá v řádech jednotek megabytů a L3 v řádech desítek megabytů (u high end procesorů i stovky MB).
+
+
+### Sběrnice
+= sada vodivých cest. Dělíme je na datové, instrukční a řídicí.
+Rychlost sběrnice je obvykle ve stovkách MHz, teoreticky až v GHz. Proto potřebujeme cache paměti, aby se procesor nemusel stále ptát na data na RAM.
+
+Pro připojení externích zařízení se používají různé sběrnice, například SATA, PCIe, atd.
+
+
+Co nás zajímá o procesoru:
+- Na win zjistíme v msinfo
+- Na linuxu v lscpu
+- Na macu v systémových informacích
+
+-> chceme vědět počet jader, frekvence, spotřeba, velikosti cache, počet channelů, typ socketu
+
 
 ## 2. Chladič procesoru: 
 Chladič procesoru je důležitou součástí počítače, 
@@ -189,6 +208,30 @@ Instalace :
 ## Periferní zařízení
 **OTAZKA 4!!**
 
+
+
+----
+
+## Ještě nějaké pojmy:
+
+**POST** - před naběhnutím BIOSu, test hardwaru, ověření základních komponent
+**BIOS** - Využívá MBR. Starší typ firmware, který řídí základní funkce počítače, jako je bootování, nastavení hardware a diagnostika.
+**UEFI** - Využívá GPT. Novější nástupce BIOSu, který nabízí pokročilejší funkce a rozhraní.
+
+V BIOSu konfigurujeme rychlosti, volbu bootloaderu, zabezpečení na úrovni BIOSu apod.
+
+**Zahoření počítače** - test, zda komp vydrží při zátěži.
+
+
+
+> ... a random poznámka k tomu:
+> Intel - north bridge + south bridge
+> AMD - north bridge + něco random.
+
+----
+
+
+
 ## Stavba počítače:
 #### 1. Začněte s instalací procesoru na základní desku.
 #### 2. Aplikujte teplovodivá pastu na CPu a připojte chladič procesoru k procesoru.
@@ -202,3 +245,8 @@ Instalace :
 #### 10. Zkontrolujte, zda jsou všechny komponenty správně připojeny a zda jsou všechny kabely správně připojeny.
 #### 11. Zapněte PSU poté počítač a nainstalujte operační systém.
 #### 12. Nakonec nainstalujte ovladače a aktualizace pro všechny komponenty.
+
+
+### Kroky při prvotním oživení:
+- zkontrolovat teploty
+- checknout zda jsou rozpoznaná zařízení

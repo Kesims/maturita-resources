@@ -224,3 +224,9 @@
 > trunk - k čemu slouží, proč
 - umožňuje přetagovat pakety z různých VLAN (enkapsulace navíc skrze dot1q), nativní vlan
 
+
+
+----
+
+Klidně můžeme i mluvit o social engineering, vícefaktorovém ověření, triádě bezpečnosti, fázích útoků... cokoliv.
+

@@ -1,4 +1,4 @@
-# 10 - Souborové zdroje v síti, správa dat pomocí NTFS teorie/praxe
+# 10 - Souborové zdroje v síti, správa dat pomocí NTFS teorie/praxe (prej ta otázka má bejt na souborové systémy)
 
 ## Souborový systém
 
@@ -41,15 +41,19 @@ kdy každý soubor musí být v souborovém systému.
 
 V souborovém systému obvykle nalezneme několik typů objektů:
 - **Soubor** - základní, může obsahovat texty, obrázky, programy, atd. <br>
-Jeho vlastnostmi jsou:
+Jakmile je pojmenován, stává se nezávislým na operačním systému, přenositelný v rámci souborového systému.
+Jeho vlastnostmi (atributy) jsou:
   - Název
   - Typ
   - Cesta
   - Velikost
   - Metadata (datum vytvoření a úpravy, vlastník, oprávnění)
-- **Adresář** - slouží k organizaci souborů do stromové struktury. <br>
+- **Adresář** - slouží k organizaci souborů do stromové struktury. Jediný rozdíl oproti souboru je 1 atribut. <br>
+
+Dále...
 - **Symbolický odkaz** - "zástupce" - pokud ho smažeme, originální soubor zůstane jak je.
 - **Pevný odkaz** - alternativní název pro soubor nebo adresář, pokud ho smažeme, odstraníme celý soubor tak jak je.
+
 
 > **Odstranění souboru** v rámci souborového systému neznamená jeho smazání z disku, pouze vymazání reference na něj.
 
@@ -163,4 +167,10 @@ může v tomto případě být obousměrná.
 množství počítačů, především pro sdílení osobních dat, bývá zpravidla méně bezpečná. Zatímco doména je centrálně řízená, workgroup je decentralizovaná (peer-to-peer).
 
 
+----
+
+Klidně můžeme mluvit i o serializaci, formátech jako JSON... O systémech záloh, RAIDu.
+
+
+Virtuální file systém (VFS) - uživatelský mód vs kernel mód.
 

@@ -1,5 +1,15 @@
 # 8 - Návrh a realizace jednoduché sítě, připojení počítače k lokální síti
 
+Máme si vymyslet co chceme.
+
+-----
+
+## VLSM - subnetování :))
+
+prostě to musíš umět, nebo jsi v řiti, jsou k tomu materiály v repu na sítě.
+
+-----
+
 ## Jak dělíme sítě
 
 ### PAN

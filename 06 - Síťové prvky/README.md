@@ -28,7 +28,7 @@ Huby obvykle nevyžadují žádnou konfiguraci.
 ### Switch (přepínač)
 - slouží k "chytrému rozbočení" sítě
 - rozděluje síť na více kolizních domén (více zařízení může vysílat najednou, aniž by se zarušovaly)
-- udržuje si tabulku MAC adres
+- udržuje si tabulku MAC adres, kterou plní podle přijaté komunikace
 - posílá paket pouze na port, kde se nachází cílová MAC adresa, pokud ho nezná, broadcastuje
 
 **Typy:**
@@ -49,11 +49,12 @@ Huby obvykle nevyžadují žádnou konfiguraci.
 
 **Konfigurace:**
 
-- Přiřazení portů do VLAN
+- Přiřazení portů do VLAN (logické dělení sítě pomocí VLAN ID, trunk porty přenesou víc vlanek enkapsulací dot1q + nativní vlan)
 - Nastavení QoS (Quality of Service) – prioritizace provozu
-- Konfigurace STP (Spanning Tree Protocol) – prevence smyček
+- Konfigurace STP (Spanning Tree Protocol) – prevence smyček (z kružnice strom), root bridge apod.
 - Nastavení LACP (Link Aggregation Control Protocol) – agregování linek
 - Konfigurace zrcadlení portů (port mirroring) – monitoring provozu
+- Port security: omezení počtu MAC adres na portu
 
 ---
 
@@ -63,6 +64,11 @@ Huby obvykle nevyžadují žádnou konfiguraci.
 - posílá paket pouze na port, kde se nachází cílová IP adresa, pokud ji nezná, používá default route
 - může mít NAT (Network Address Translation) - překládá veřejnou IP adresu na privátní a naopak
 - !!! Pozor - dnes hovorově jako router označujeme domácí zařízení, které zahrnuje i switch, AP, firewall, ..., avšak ROUTER v pravém slova smyslu tyto funkce neplní!
+- Statické směřování (definované administrátorem) / Směrovací protokoly: Link state (řeší mnoho parametrů - rychlost linky, počet hopů...) např. OSPF) / Distance vector (počítá pouze počet hopů), např. RIP)
+- Když přijde pakcet
+  - Počítá adresu sítě podle ip a masky
+  - Hledá v tabulce nejdelší shodu (pokud nenajde, hledá default routu)
+  - Posílá
 
 **Typy:**
 
@@ -173,6 +179,11 @@ Při krimpování kabelů se obvykle využívají 2 standardy:
 - T568B
 
 Kabely mohou být straight-through (přímý) nebo crossover (křížený).
+
+
+**Optika**
+- Single-mode (jednovidová) - pro velké vzdálenosti, menší ztráty
+- Multi-mode (vícevidová) - použití více paprsků v jednom vlákně, pro kratší vzdálenosti, větší ztráty. Materiál s optckým gradientem, na zpomalení "přímějších" paprsků.
 
 ### Patch panel
 - slouží k propojení kabelů do switchů, routerů, ... jako "zásuvka pro síť"

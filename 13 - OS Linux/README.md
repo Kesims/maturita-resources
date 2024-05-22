@@ -1,6 +1,11 @@
 # 13 - Linux
 
 ## Pojmy
+Hyper-v = nativní virtualizace ve win (dále wmware, virtualbox, docker)
+druhy virtualizace (hypervizor 1. a 2. úrovně)
+update vs upgrade
+
+
 
 - **Unix** - Unix je rodina multitaskingových, multiuserových operačních systémů vyvinutých v 70. letech 20. století. Jedná se o sadu operačních systémů, které sdílejí určité základní vlastnosti a principy návrhu. Unixové systémy jsou známé svou modularitou, schopností pracovat v síti, a také podporou příkazového řádku, což umožňuje uživatelům interagovat s systémem prostřednictvím textového rozhraní. Mezi základní principy Unixu patří filozofie "Everything is a file" (Všechno je soubor), což znamená, že zařízení, procesy a síťové komunikace jsou reprezentovány jako soubory.
 - **Kernel** - Kernel je jádro operačního systému, centrální část softwaru, která řídí základní operace a poskytuje rozhraní pro interakci mezi hardwarovými součástmi počítače a aplikacemi. Jeho hlavní funkcí je správa zdrojů, jako jsou paměť, procesory, periferní zařízení a síťová komunikace. Kernel přijímá příkazy z uživatelů a aplikací, koordinuje jejich běh a zajišťuje, aby jednotlivé části systému pracovaly harmonicky a efektivně. Je zodpovědný za spouštění a ukončování procesů, alokaci paměti, správu souborového systému a zajištění bezpečnosti a ochrany dat. Jádro je nejzákladnější částí operačního systému a běží v privilegovaném režimu, což mu umožňuje přímý přístup k hardwaru.
@@ -9,6 +14,11 @@
 - **KDE** - K Desktop Environment je desktopové pracovní prostředí pro Unixové a Unix-like operační systémy, jako je Linux. Jedná se o soubor softwarových aplikací, knihoven a nástrojů, které poskytují grafické uživatelské rozhraní pro interakci s počítačem. KDE nabízí uživatelům prostředí s možností přizpůsobení, souběžně s tím poskytuje intuitivní a uživatelsky přívětivé prostředí. Tento desktopový prostředek zahrnuje okenní manažer, správce souborů, panely, widgety a další aplikace, které usnadňují práci s počítačem a zlepšují uživatelskou produktivitu. KDE je známé svou flexibilitou a možnostmi personalizace prostředí podle potřeb a preferencí jednotlivých uživatelů.
 - **GNOME** - GNOME je další populární desktopové pracovní prostředí pro Unixové a Unix-like operační systémy, jako je Linux. Je to sada softwarových aplikací, knihoven a nástrojů, které poskytují uživatelům grafické prostředí pro interakci s počítačem. GNOME se zaměřuje na jednoduchost, eleganci a uživatelskou přívětivost. Jednou z klíčových vlastností GNOME je jeho filozofie "práce založená na aktivitách" (activity-based working), která se zaměřuje na usnadnění práce s otevřenými aplikacemi a dokumenty prostřednictvím dynamických pracovních ploch a uspořádání okolí na základě aktuálních činností.
 - **Systémové volání** - Systémové volání je mechanismus, který umožňuje uživatelům a aplikacím komunikovat s jádrem operačního systému a využívat jeho služby a funkce. Když uživatel nebo aplikace potřebuje provést operaci, která vyžaduje přístup k systémovým prostředkům, jako je čtení nebo zápis do souboru, alokace paměti nebo vytvoření nového procesu, použije systémové volání k požádání jádra o provedení této operace. Systémová volání jsou definována operačním systémem a poskytují standardizované rozhraní pro interakci s jádrem. Uživatelé a aplikace mohou volat systémová volání prostřednictvím knihoven nebo API, které poskytují přístup k těmto funkcím.
+- **Shell** - interpret příkazů (bash, zsh, fish; powershell - windows)
+
+> Unix vs. Linux: Unix je starší, proprietární operační systém vyvinutý v Bellových laboratořích, zatímco Linux je mladší, open-source operační systém inspirovaný Unixem, který je dostupný zdarma a má širokou komunitní podporu.
+
+> GNOME vs KDE: KDE je obecně mnohem otevřenější a více konfigurovatelné, než GNOME.
 
 ## Funkce a význam OS
 
@@ -60,4 +70,23 @@ Lze ho použít k vypsání informací o procesech, které běží na počítač
 Co to je proces a daemon [viz. otázka 2](/02%20-%20Základy%20OS/README.md)
 
 vč. informací z [otázky 3](/03%20-%20Konfigurace%20OS/README.md)
+
+
+--- 
+
+
+vysvětlit strukturu souborového systému Linuxu
+
+tvorba uživatelů...
+
+
+proces init - je to první proces, který managuje všechny ostatní, stojí na vrchu stromu. Pokud něco pod ním umře, init se snaží správně ukončit běh spadnutého procesu. (Windows oproti tomu mají víc počátečních procesů.)
+
+systemd
+
+pár základních příkazů
+
+sudo
+
+
 

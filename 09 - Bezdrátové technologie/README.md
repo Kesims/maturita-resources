@@ -81,6 +81,8 @@ V případě 5 GHz se jedná o 25 kanálů.
 Wi-Fi se ale nevyužívá pouze pro sítě řekněme v rámci 1 budovy, ale lze ji najít také například v několikakilometrových
 point to point spojích.
 
+MIMO - Komunikace mezi více zařízeními. Využívá se pro zvýšení rychlosti a spolehlivosti přenosu dat.
+
 
 ### Konfigurace a zabezpečení sítě Wi-Fi
 
@@ -180,3 +182,11 @@ pro komunikaci mezi zařízeními a bránami. Tato technologie má velmi omezeno
 - **Z-Wave**: Další technologie pro chytré domácnosti, která využívá frekvenci 900 MHz. Z-Wave je uzavřený standard, což znamená, že všechna zařízení musí být certifikována a splňovat určité požadavky. To zajišťuje větší kompatibilitu mezi různými výrobci, ale zároveň omezuje výběr zařízení.
 - **Satelitní komunikace**: Využívá satelity pro přenos dat a hlasových hovorů po celém světě. Satelitní komunikace je vhodná pro oblasti, kde není dostupná klasická infrastruktura, jako jsou oceány, pouště nebo odlehlé oblasti.
 Do této kategorie dnes patří i **Starlink** od SpaceX, který využívá satelity v nízké oběžné dráze pro poskytování internetového připojení.
+
+
+
+
+
+
+### Colision avoidance 
+- než vysílám, ptám se zda je volno, nechám si přidělit časový slot pro vysílání
