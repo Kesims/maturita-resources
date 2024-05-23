@@ -1,11 +1,14 @@
 # 13 - Linux
 
 ## Pojmy
-Hyper-v = nativní virtualizace ve win (dále wmware, virtualbox, docker)
-druhy virtualizace (hypervizor 1. a 2. úrovně)
-update vs upgrade
 
-
+### Update vs Upgrade
+| **UPDATE**    | **UPGRADE** |
+| -------- | ------- |
+| Aktualizace softwaru  | Významná změna softwaru  |
+| malé, inkrementální změny | velké, zásadní změny|
+| opravuje chyby, zvyšuje bezpečnost a může přidávat drobné funkce |  přináší nové funkce, vylepšení výkonu a může změnit uživatelské rozhraní     |
+| Windows 10 dostává pravidelné aktualizace  | Přechod z Windows 7 na Windows 10.    |
 
 - **Unix** - Unix je rodina multitaskingových, multiuserových operačních systémů vyvinutých v 70. letech 20. století. Jedná se o sadu operačních systémů, které sdílejí určité základní vlastnosti a principy návrhu. Unixové systémy jsou známé svou modularitou, schopností pracovat v síti, a také podporou příkazového řádku, což umožňuje uživatelům interagovat s systémem prostřednictvím textového rozhraní. Mezi základní principy Unixu patří filozofie "Everything is a file" (Všechno je soubor), což znamená, že zařízení, procesy a síťové komunikace jsou reprezentovány jako soubory.
 - **Kernel** - Kernel je jádro operačního systému, centrální část softwaru, která řídí základní operace a poskytuje rozhraní pro interakci mezi hardwarovými součástmi počítače a aplikacemi. Jeho hlavní funkcí je správa zdrojů, jako jsou paměť, procesory, periferní zařízení a síťová komunikace. Kernel přijímá příkazy z uživatelů a aplikací, koordinuje jejich běh a zajišťuje, aby jednotlivé části systému pracovaly harmonicky a efektivně. Je zodpovědný za spouštění a ukončování procesů, alokaci paměti, správu souborového systému a zajištění bezpečnosti a ochrany dat. Jádro je nejzákladnější částí operačního systému a běží v privilegovaném režimu, což mu umožňuje přímý přístup k hardwaru.
@@ -67,7 +70,7 @@ Lze ho použít k vypsání informací o procesech, které běží na počítač
 
 > Mnohem lepší alternativou je htop, případně ještě lépe bpytop.
 
-Co to je proces a daemon [viz. otázka 2](/02%20-%20Základy%20OS/README.md)
+Co to je proces a daemon [viz. otázka 2](https://github.com/Kesims/maturita-resources/blob/main/02%20-%20Základy%20OS/README.md#terminologie)
 
 vč. informací z [otázky 3](/03%20-%20Konfigurace%20OS/README.md)
 
@@ -75,18 +78,88 @@ vč. informací z [otázky 3](/03%20-%20Konfigurace%20OS/README.md)
 --- 
 
 
-vysvětlit strukturu souborového systému Linuxu
+## Struktura souborového systému Linuxu
 
-tvorba uživatelů...
+Linuxový souborový systém má hierarchickou strukturu, která začíná kořenovým adresářem a rozvětvuje se do různých podadresářů a souborů. Zde jsou klíčové složky:
+
+- **/**: Kořenový adresář, označovaný jako "root". Všechny ostatní složky a soubory se nacházejí pod touto adresou.
+- **/bin**: Obsahuje spustitelné binární soubory (programy) potřebné pro základní funkce systému, jako je spouštění a základní správa.
+- **/boot**: Obsahuje zavaděč (boot loader), jádro (kernel) a další soubory potřebné pro startování systému.
+- **/etc**: Obsahuje konfigurační soubory pro systém a instalované aplikace. Zde se nacházejí nastavení pro různé služby a procesy.
+- **/home**: Domovské adresáře uživatelů, kde jsou uloženy jejich osobní soubory a nastavení.
+- **/lib** a **/lib64**: Obsahují knihovny (libraries) potřebné pro běh spustitelných souborů v adresáři `/bin` a `/sbin`.
+- **/tmp**: Dočasný adresář pro ukládání dočasných souborů v průběhu běhu systému.
+- **/usr**: Obsahuje většinu uživatelských programů, knihoven, hlavičkových souborů a datových souborů
+- **/var**: Obsahuje data, která se mohou měnit v průběhu provozu systému, jako jsou logy, cache a dočasné soubory.
+
+[Tvorba uživatelů v Linuxu je prováděna pomocí několika příkazů, jako je `useradd`, `userdel` nebo `usermod`. ](https://github.com/Kesims/maturita-resources/tree/main/03%20-%20Konfigurace%20OS#soubory-passwd-a-shadow-a-jejich-význam-při-správě-os)
 
 
-proces init - je to první proces, který managuje všechny ostatní, stojí na vrchu stromu. Pokud něco pod ním umře, init se snaží správně ukončit běh spadnutého procesu. (Windows oproti tomu mají víc počátečních procesů.)
+Je důležité být obeznámen s těmito příkazy a postupy, aby bylo možné efektivně spravovat uživatelské účty v Linuxovém prostředí.
 
-systemd
+## Init
+Proces init je prvním procesem spuštěným v Linuxovém operačním systému a hraje klíčovou roli při správě a řízení ostatních procesů. Jeho hlavní funkcí je inicializovat systém a spravovat procesy běžící na daném systému. Nachází se na vrcholu procesové hierarchie a má procesní identifikátor (PID) 1.
 
-pár základních příkazů
+Když jiný proces skončí nebo selže, init se snaží zabezpečit, aby se systém vrátil do stabilního stavu. To znamená, že pokud nějaký proces skončí nebo selže, init provede potřebné kroky k uklidnění systému a minimalizaci negativního dopadu na jeho funkčnost.
 
-sudo
+V rámci moderních Linuxových distribucí se stále častěji používá náhrada za tradiční init systém, jako je systemd. systemd je komplexní systém a správce služeb pro Linux, který přebírá mnoho funkcí původního init a zároveň poskytuje další funkce jako paralelní spouštění služeb, uvolnění závislostí mezi službami a správu logů.
 
+Na rozdíl od Linuxu mají operační systémy Windows obvykle více počátečních procesů, z nichž každý má své vlastní úkoly a odpovědnosti. Tyto procesy zajišťují správu různých částí operačního systému, jako je uživatelské rozhraní, síťová komunikace a další systémové služby.
 
+## pár základních příkazů
+- sudo: Zkratka pro "superuser do". Přidává dočasně uživateli práva superuživatele pro vykonání příkazu, který vyžaduje vyšší oprávnění
+- ls: Seznamuje s obsahem aktuálního adresáře.
+- cd: Mění aktuální pracovní adresář.
+- mkdir: Vytváří nový adresář.
+- rm: Odstraňuje soubory nebo adresáře.
+- chmod: Mění oprávnění souborů a adresářů.
+- man: Zobrazuje manuálové stránky pro daný příkaz.
 
+příklad : 
+```cmd
+"rm -rf"
+rm: Zkratka pro "remove", což znamená odstranění.
+-r: Přepínač "recursive" indikuje, že se má příkaz provést rekurzivně, tedy odstranit i obsah adresářů.
+-f: Přepínač "force" znamená, že se nemá ptát uživatele na potvrzení smazání, což může být nebezpečné, protože to umožňuje odstranit soubory bez dalšího potvrzení.
+```
+
+### Nativní virtualizace ve Windows: Hyper-V
+
+#### Hyper-V
+- **Definice**: Nativní hypervizor společnosti Microsoft, integrovaný v systémech Windows Server a některých edicích Windows 10 a 11.
+- **Výhody**: 
+  - Integrace s Windows, snadné nasazení.
+  - Podpora pro virtualizaci serverů i desktopů.
+  - Možnost správy prostřednictvím Hyper-V Manager a PowerShell.
+- **Použití**: Podnikové virtualizace, testovací prostředí, školení.
+
+#### Další hypervizory
+
+- **VMware**
+  - **Definice**: Jeden z nejpopulárnějších hypervizorů, dostupný ve verzích ESXi (Type 1) a Workstation (Type 2).
+  - **Výhody**: Široká podpora, robustní funkcionality, výkon.
+  - **Použití**: Datová centra, vývoj, testování.
+
+- **VirtualBox**
+  - **Definice**: Open-source hypervizor (Type 2) vyvinutý společností Oracle.
+  - **Výhody**: Široká podpora různých operačních systémů, bezplatný.
+  - **Použití**: Vývojářské testování, domácí a malé kancelářské použití.
+
+- **Docker**
+  - **Definice**: Platforma pro kontejnerizaci, která umožňuje balení aplikací a jejich závislostí do kontejnerů.
+  - **Výhody**: Lehčí než tradiční VM, rychlé nasazení, přenositelnost mezi prostředími.
+  - **Použití**: Vývoj a nasazení mikroslužeb, CI/CD pipeline, cloudová infrastruktura.
+### Druhy virtualizace
+
+#### Hypervizor 1. úrovně (Type 1 Hypervisor)
+
+**Definice:** Běží přímo na fyzickém hardware, bez operačního systému jako mezivrstvy.
+**Příklad:** VMware ESXi, Microsoft Hyper-V, Xen.
+**Výhody:** Vyšší výkon a efektivita, přímý přístup k hardwaru.
+**Použití:** Datová centra, velké podnikové servery.
+
+#### Hypervizor 2. úrovně (Type 2 Hypervisor)
+**Definice:** Běží na hostitelském operačním systému, který poskytuje základní úroveň podpory.
+**Příklad:** VMware Workstation, Oracle VM VirtualBox, Parallels Desktop.
+**Výhody:** Snadná instalace a použití, vhodné pro desktopovou virtualizaci.
+**Použití:** Vývojářské testování, domácí a malé kancelářské použití.
