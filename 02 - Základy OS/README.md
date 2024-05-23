@@ -12,7 +12,7 @@
 - **LTS (Long Term Support)** - Stabilní verze OS, která je podporována po delší dobu.
 - **Update** - Aktualizace SW, která opravuje chyby, zlepšuje výkon a přidává nové funkce. (např. běžný Windows Update)
 - **Upgrade** - Přechod na novější verzi OS. (např. Windows 10 na Windows 11)
-
+- **Daemon** - Daemon je označení pro službu nebo proces, který běží na pozadí operačního systému nebo ve službě a provádí určité funkce, bez interakce s uživatelem.
 ## Základní funkce OS
 
 - **výkon instrukcí** -> správa procesů, přiděluje a odebírá procesům systémové prostředky počítače
