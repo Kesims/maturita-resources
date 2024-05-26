@@ -1,4 +1,6 @@
 ## !!CHATBOT ODPOVED UPRAVENA MNOU!! BE WARE !!
+# Reklama
+Reklama je placené sdělení, jehož cílem je propagace produktů
 # Internetový marketing
 
 Internetový marketing, často označovaný také jako **online marketing nebo digitální marketing**,
