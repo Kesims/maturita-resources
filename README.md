@@ -13,6 +13,9 @@ Otázky označené jako `P` jsou pouze pro skupinu programátorů, `G` pro skupi
 
 Dělejte si s tím co chcete, pull requestujte, forkujte, whatever.
 
+----- 
+úspěšnost maturtantú kteří používali tento repositář 
+100%
 
 
 
