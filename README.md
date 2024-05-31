@@ -14,10 +14,19 @@ Otázky označené jako `P` jsou pouze pro skupinu programátorů, `G` pro skupi
 Dělejte si s tím co chcete, pull requestujte, forkujte, whatever.
 
 ----- 
-úspěšnost maturtantú kteří používali tento repositář  = 100%
------
+Úspěšnost maturtantú kteří používali tento repozitář:
+100% lol.ß
 
-## Rozložení místnosti kde se dělají ústní
+
+-----
+## Jak probíhá samotná ústní zkouška?
+
+Několik týdnu před maturitou škola zašle rozpis zkoušek:
+
+![img.png](Obrazky/rozpis.png)
+
+Samotná zkušební místnost pak vypadala nějak takto (zkouška se konala v učebně 210, ostatní mohli čekat buď na židlích uvnitř, nebo v učebně 319):
+
 ![image](https://github.com/Kesims/maturita-resources/assets/97666898/d7f8b25c-4cf6-49e5-a4f6-8fee26a2446d)
 ```
 zelené bloky = židle
@@ -27,12 +36,24 @@ světle modrý blok = stůl pro učitele a zkoušení
 tmavě zelené bloky na spodu = židle pro posluchače
 červené kolečka = táci s číslama
 ```
-Postup :
-1. přijdete 2 minuty před tím než máte začít ven před místnost nebo na židle pro posluchače
-2. vezmete si číslo z tácku
-3. dostanete papír s pojmy a otazky k tematu
-např. č. 19 - vysvětlete pojmy ACID, entita E-R diagram, atd.
-4. Napíšete vše co můžete
-5. po 15m jdete k stolu na zkoušení
+Průběh zkoušení:
+1. Přijdete přibližně 2 minuty před tažením.
+2. Jakmile přijde čas, vylosujete si číslo z tácku.
+3. Dostanete papír s pojmy a otázkami k tématu, které jste si vylosovali - následuje 15 minut na přípravu.
+    
+> **Příklad otázky 15 - Digitální fotografie:**
+> - 8f, 1/30, CCD a CMOS, Hloubka ostrosti, ISO
+> - Popište vznik první fotografie, co to byla Camera Obscura, Lanterna Magica, Camera Lucida, Diorama, jak se přišlo na aditivní míchání barev.
+> - Jaké znáte druhy fotoaparátů (3 kategorie).
+> - Popište přípravu kompozice fotografie, nastavení fotoaparátu v různých prostředích.
+> - Jaké jsou pravidla při kompozici a nejčastější chyby.
+> 
+> ... + ještě něco, ale přesně si to teď nevybavuji.
+> 
+> Důležité je, že zpravidla tyto otázky na papíře jsou dostatečné na to, aby vydaly na 15 minut zkoušení, není potřeba řešit příliš
+> mnoho informací nad rozsah těchto otázek, stejně se k nim člověk nedostane.
 
-učitele vam budou radit a pomáhat obzvzlášť když vás mají rádi 
+4. Během přípravy si člověk vše co může sepíše na papír.
+5. Následuje 15 minut ústního zkoušení.
+
+Učitelé byli velmi vstřícní, nedělají "naschvály".
