@@ -14,8 +14,8 @@ Otázky označené jako `P` jsou pouze pro skupinu programátorů, `G` pro skupi
 Dělejte si s tím co chcete, pull requestujte, forkujte, whatever.
 
 ----- 
-Úspěšnost maturtantú kteří používali tento repozitář:
-100% lol.ß
+Úspěšnost maturtantů kteří používali tento repozitář:
+100% lol.
 
 
 -----
@@ -53,7 +53,7 @@ Průběh zkoušení:
 > Důležité je, že zpravidla tyto otázky na papíře jsou dostatečné na to, aby vydaly na 15 minut zkoušení, není potřeba řešit příliš
 > mnoho informací nad rozsah těchto otázek, stejně se k nim člověk nedostane.
 
-4. Během přípravy si člověk vše co může sepíše na papír.
+4. Během přípravy si člověk sepíše na papír svoje myšlenky.
 5. Následuje 15 minut ústního zkoušení.
 
 Učitelé byli velmi vstřícní, nedělají "naschvály".
